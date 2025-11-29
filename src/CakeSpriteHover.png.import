@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tdi35fnvdrem"
-path="res://.godot/imported/Backgroundcake.png-964762e9ce9625779bd9d1771c1ce158.ctex"
+uid="uid://byd0er6hg2dq8"
+path="res://.godot/imported/CakeSpriteHover.png-488a0ddedf41e44cfea627f220bb0c80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Backgroundcake.png"
-dest_files=["res://.godot/imported/Backgroundcake.png-964762e9ce9625779bd9d1771c1ce158.ctex"]
+source_file="res://src/CakeSpriteHover.png"
+dest_files=["res://.godot/imported/CakeSpriteHover.png-488a0ddedf41e44cfea627f220bb0c80.ctex"]
 
 [params]
 

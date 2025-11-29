@@ -36,4 +36,4 @@ func _on_back_pressed() -> void:
 
 func _on_start_pressed() -> void:
 	print("Start")# Replace with function body.
-	get_tree().change_scene_to_file("res://SelectCharacter/CharacterSelect.tscn")
+	get_tree().change_scene_to_file("res://src/SelectCharacter/CharacterSelect.tscn")
