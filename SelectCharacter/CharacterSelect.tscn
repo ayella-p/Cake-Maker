@@ -1,0 +1,101 @@
+[gd_scene load_steps=9 format=3 uid="uid://dvhcm5mi3mgj3"]
+
+[ext_resource type="Script" uid="uid://1disr3p05voj" path="res://SelectCharacter/character_select.gd" id="1_xu33s"]
+[ext_resource type="Texture2D" uid="uid://cagtvq8hp6g8p" path="res://SelectCharacter/character_bg_image.png" id="2_hapfs"]
+[ext_resource type="Texture2D" uid="uid://dqgeqsnd4qcui" path="res://SelectCharacter/chef_not_hover.png" id="3_hfg3w"]
+[ext_resource type="Texture2D" uid="uid://u8f6tedn5ql" path="res://SelectCharacter/chef_hovered.png" id="4_gov6x"]
+[ext_resource type="Texture2D" uid="uid://bpj22u0yt66ke" path="res://SelectCharacter/confirmbutton.jpg" id="5_48bvk"]
+[ext_resource type="Texture2D" uid="uid://bi75bt7cyu8cm" path="res://SelectCharacter/female_chef.png" id="5_n076c"]
+[ext_resource type="Texture2D" uid="uid://cuj73cytym1ac" path="res://SelectCharacter/male_chef.png" id="6_48bvk"]
+[ext_resource type="Texture2D" uid="uid://badhia4kcqsg6" path="res://SelectCharacter/backbutton.jpg" id="6_ybiy5"]
+
+[node name="CharacterSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xu33s")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -49.0
+offset_top = -45.0
+offset_right = 66.0
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_hapfs")
+
+[node name="Male_Button" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 222.0
+offset_top = 429.0
+offset_right = 477.0
+offset_bottom = 538.0
+texture_normal = ExtResource("3_hfg3w")
+texture_pressed = ExtResource("4_gov6x")
+texture_hover = ExtResource("4_gov6x")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="FemaleButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.65300006
+anchor_bottom = 0.5
+offset_left = 671.0
+offset_top = 440.0
+offset_right = 126.74396
+offset_bottom = 222.0
+texture_normal = ExtResource("3_hfg3w")
+texture_pressed = ExtResource("4_gov6x")
+texture_hover = ExtResource("4_gov6x")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ConfirmButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1021.0
+offset_top = 474.0
+offset_right = 1102.0
+offset_bottom = 547.0
+texture_normal = ExtResource("5_48bvk")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Female_Chef" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 682.0
+offset_top = 91.0
+offset_right = 933.0
+offset_bottom = 443.0
+texture = ExtResource("5_n076c")
+expand_mode = 1
+
+[node name="Male_Chef" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 229.0
+offset_top = 64.0
+offset_right = 449.0
+offset_bottom = 467.0
+texture = ExtResource("6_48bvk")
+stretch_mode = 5
+
+[node name="BackButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1013.0
+offset_top = 70.0
+offset_right = 1105.0
+offset_bottom = 155.0
+texture_normal = ExtResource("6_ybiy5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
