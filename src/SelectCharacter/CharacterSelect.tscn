@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://dvhcm5mi3mgj3"]
 
-[ext_resource type="Script" uid="uid://1disr3p05voj" path="res://SelectCharacter/character_select.gd" id="1_xu33s"]
-[ext_resource type="Texture2D" uid="uid://cagtvq8hp6g8p" path="res://SelectCharacter/character_bg_image.png" id="2_hapfs"]
-[ext_resource type="Texture2D" uid="uid://dqgeqsnd4qcui" path="res://SelectCharacter/chef_not_hover.png" id="3_hfg3w"]
-[ext_resource type="Texture2D" uid="uid://u8f6tedn5ql" path="res://SelectCharacter/chef_hovered.png" id="4_gov6x"]
-[ext_resource type="Texture2D" uid="uid://bpj22u0yt66ke" path="res://SelectCharacter/confirmbutton.jpg" id="5_48bvk"]
-[ext_resource type="Texture2D" uid="uid://bi75bt7cyu8cm" path="res://SelectCharacter/female_chef.png" id="5_n076c"]
-[ext_resource type="Texture2D" uid="uid://cuj73cytym1ac" path="res://SelectCharacter/male_chef.png" id="6_48bvk"]
-[ext_resource type="Texture2D" uid="uid://badhia4kcqsg6" path="res://SelectCharacter/backbutton.jpg" id="6_ybiy5"]
+[ext_resource type="Script" uid="uid://1disr3p05voj" path="res://src/SelectCharacter/character_select.gd" id="1_xu33s"]
+[ext_resource type="Texture2D" uid="uid://cagtvq8hp6g8p" path="res://src/SelectCharacter/character_bg_image.png" id="2_hapfs"]
+[ext_resource type="Texture2D" uid="uid://dqgeqsnd4qcui" path="res://src/SelectCharacter/chef_not_hover.png" id="3_hfg3w"]
+[ext_resource type="Texture2D" uid="uid://u8f6tedn5ql" path="res://src/SelectCharacter/chef_hovered.png" id="4_gov6x"]
+[ext_resource type="Texture2D" uid="uid://bpj22u0yt66ke" path="res://src/SelectCharacter/confirmbutton.jpg" id="5_48bvk"]
+[ext_resource type="Texture2D" uid="uid://bi75bt7cyu8cm" path="res://src/SelectCharacter/female_chef.png" id="5_n076c"]
+[ext_resource type="Texture2D" uid="uid://cuj73cytym1ac" path="res://src/SelectCharacter/male_chef.png" id="6_48bvk"]
+[ext_resource type="Texture2D" uid="uid://badhia4kcqsg6" path="res://src/SelectCharacter/backbutton.jpg" id="6_ybiy5"]
 
 [node name="CharacterSelect" type="Control"]
 layout_mode = 3

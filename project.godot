@@ -13,4 +13,4 @@ config_version=5
 config/name="Cake_maker"
 run/main_scene="uid://b2e28vcmug0q4"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://src/icon.svg"

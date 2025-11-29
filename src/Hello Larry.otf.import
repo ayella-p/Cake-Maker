@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cmlipncmhdg54"
-path="res://.godot/imported/Mun regular.ttf-ae09216d90dea35325978074a97457a8.fontdata"
+uid="uid://ib64rxoffavf"
+path="res://.godot/imported/Hello Larry.otf-002b926e3a192309984c7811bb9b5c82.fontdata"
 
 [deps]
 
-source_file="res://Mun regular.ttf"
-dest_files=["res://.godot/imported/Mun regular.ttf-ae09216d90dea35325978074a97457a8.fontdata"]
+source_file="res://src/Hello Larry.otf"
+dest_files=["res://.godot/imported/Hello Larry.otf-002b926e3a192309984c7811bb9b5c82.fontdata"]
 
 [params]
 

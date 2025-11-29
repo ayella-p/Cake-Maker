@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqgeqsnd4qcui"
-path="res://.godot/imported/chef_not_hover.png-8b0589e4e6b2b85f1400ea4ce544c629.ctex"
+uid="uid://bdjfip0bx6ig3"
+path="res://.godot/imported/CakeSprite.png-a4d21aa3c0e1fcc27ca9e7d15d34437f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SelectCharacter/chef_not_hover.png"
-dest_files=["res://.godot/imported/chef_not_hover.png-8b0589e4e6b2b85f1400ea4ce544c629.ctex"]
+source_file="res://src/CakeSprite.png"
+dest_files=["res://.godot/imported/CakeSprite.png-a4d21aa3c0e1fcc27ca9e7d15d34437f.ctex"]
 
 [params]
 

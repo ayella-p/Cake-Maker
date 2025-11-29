@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byd0er6hg2dq8"
-path="res://.godot/imported/CakeSpriteHover.png-3e54cef498f78f63751ae87acc97e5e5.ctex"
+uid="uid://bi75bt7cyu8cm"
+path="res://.godot/imported/female_chef.png-e0a078511ff446199a87769ca593b585.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CakeSpriteHover.png"
-dest_files=["res://.godot/imported/CakeSpriteHover.png-3e54cef498f78f63751ae87acc97e5e5.ctex"]
+source_file="res://src/SelectCharacter/female_chef.png"
+dest_files=["res://.godot/imported/female_chef.png-e0a078511ff446199a87769ca593b585.ctex"]
 
 [params]
 
