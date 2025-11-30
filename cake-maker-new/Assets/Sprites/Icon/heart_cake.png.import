@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl6vpww08jjtc"
-path="res://.godot/imported/base_background.png-d598dfe2b2bfbfcdad07ff64e9359c46.ctex"
+uid="uid://br8mqsb6rxmuc"
+path="res://.godot/imported/heart_cake.png-5a47d90c34833abfec8df4882a6e6774.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GameScenes/MainGame/base_background.png"
-dest_files=["res://.godot/imported/base_background.png-d598dfe2b2bfbfcdad07ff64e9359c46.ctex"]
+source_file="res://Assets/Sprites/Icon/heart_cake.png"
+dest_files=["res://.godot/imported/heart_cake.png-5a47d90c34833abfec8df4882a6e6774.ctex"]
 
 [params]
 

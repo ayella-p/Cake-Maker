@@ -1,43 +1,42 @@
 extends Node2D
 
-@onready var small_order = $Order/SmallOrder
-@onready var big_order = $Order/BigOrder
+@onready var circle_btn = $CircleButton
+@onready var square_btn = $SquareButton
+@onready var heart_btn = $HeartButton
+@onready var next_btn = $'Display/NextButton'
+@onready var table_cake = $TableCake #tablecake
+
+#loading image
+var circle_texture = preload("res://Assets/Sprites/Icon/circle_cake.png")
+var square_texture = preload("res://Assets/Sprites/Icon/square_cake.png")
+var heart_texture = preload("res://Assets/Sprites/Icon/heart_cake.png")
 
 func _ready():
-	await get_tree().process_frame
-	big_order.pivot_offset = big_order.size / 2
-	# Start with big order open
-	show_big_order()
-	
-	# clicking the small paper opens the big one
-	small_order.pressed.connect(_on_small_order_clicked)
-	
-	# clicking the BIG paper closes itself (puts it away)
-	big_order.pressed.connect(_on_big_order_closed)
+	next_btn.visible = false
+	circle_btn.pressed.connect(_on_circle_clicked)
+	square_btn.pressed.connect(_on_square_clicked)
+	heart_btn.pressed.connect(_on_heart_clicked)
 
-func show_big_order():
-	small_order.visible = false
-	big_order.visible = true
-	big_order.scale = Vector2.ZERO # Start invisible (size 0)
-	var tween = create_tween()
-	tween.set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
-	tween.tween_property(big_order, "scale", Vector2.ONE, 0.4)
 
-func show_small_order():
+func _on_circle_clicked():
+	Global.cake_stack.push_back("circle_base")
+	table_cake.texture = circle_texture
+	next_btn.visible = true
+	print("Stack:", Global.cake_stack)
 	
-	var tween = create_tween()
-	tween.set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_IN)
-	# shrink to size 0 over 0.3 seconds
-	tween.tween_property(big_order, "scale", Vector2.ZERO, 0.3)
-	
-	# animation
-	tween.finished.connect(func(): 
-		big_order.visible = false
-		small_order.visible = true
-	)
 
-func _on_small_order_clicked():
-	show_big_order()
+func _on_square_clicked():
+	Global.cake_stack.push_back("square_base")
+	table_cake.texture = square_texture
+	next_btn.visible = true
+	print("Stack:", Global.cake_stack)
 
-func _on_big_order_closed():
-	show_small_order()
+func _on_heart_clicked(): 
+	Global.cake_stack.push_back("heart_base")
+	table_cake.texture = heart_texture
+	next_btn.visible = true
+	print("Added Heart. Stack:", Global.cake_stack)
+
+func _on_next_pressed():
+	print("It is clicked")
+	get_tree().change_scene_to_file("res://GameScenes/DecoratingScene.tscn")
