@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfr74c251srni"]
+
+[ext_resource type="Texture2D" uid="uid://yutxyp04srt6" path="res://Assets/Sprites/OrderForm/first_order.jpg" id="1_dglvb"]
+[ext_resource type="Script" uid="uid://b4tseqhrbhe27" path="res://GameScenes/MainGame/order.gd" id="1_tgl2w"]
+
+[node name="Order" type="CanvasLayer"]
+script = ExtResource("1_tgl2w")
+
+[node name="SmallOrder" type="TextureButton" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 150.0
+offset_top = 3.0
+offset_right = -878.0
+offset_bottom = -518.0
+texture_normal = ExtResource("1_dglvb")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="BigOrder" type="TextureButton" parent="."]
+offset_left = 323.0
+offset_top = 8.0
+offset_right = 836.0
+offset_bottom = 625.0
+texture_normal = ExtResource("1_dglvb")
+ignore_texture_size = true
+stretch_mode = 5

@@ -28,5 +28,5 @@ func _confirm():
 
 func _on_back_button_pressed() -> void:
 	print("Back button works!")
-	get_tree().change_scene_to_file("res://src/Main_menu.tscn")
+	get_tree().change_scene_to_file("res://GameScenes/MainMenu/Main_Menu.tscn")
 	 # Replace with function body.
