@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsq74lvf0jekj"]
+
+[ext_resource type="Script" uid="uid://cnvfdfviosy" path="res://Autoloads/music_player.gd" id="1_aatr8"]
+[ext_resource type="AudioStream" uid="uid://sn36bvwxxfi8" path="res://Assets/Music/Background/Baby Gorillas.mp3" id="2_g86wf"]
+
+[node name="MusicPlayer" type="Node"]
+script = ExtResource("1_aatr8")
+
+[node name="Bgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_g86wf")
+bus = &"Bgm_bus"
