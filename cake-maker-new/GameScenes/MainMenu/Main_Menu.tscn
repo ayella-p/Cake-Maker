@@ -1,132 +1,145 @@
 [gd_scene load_steps=19 format=3 uid="uid://dffv0fxympw6i"]
 
-[ext_resource type="Script" uid="uid://i6utlo3lkixu" path="res://GameScenes/MainMenu/main_menu.gd" id="1_heugc"]
+[ext_resource type="Script" uid="uid://1disr3p05voj" path="res://GameScenes/SelectCharacter/character_select.gd" id="1_8tbwf"]
 [ext_resource type="PackedScene" uid="uid://b8opvrf2ka2hs" path="res://Assets/Sprites/Animation/color_rect.tscn" id="2_1ycsb"]
-[ext_resource type="FontFile" uid="uid://u5egi6qa7ntk" path="res://Assets/Sprites/Fonts/Hello Larry.otf" id="3_1ycsb"]
-[ext_resource type="Texture2D" uid="uid://o2t7iw2383yc" path="res://Assets/Sprites/Background/Background.png" id="3_8tbwf"]
-[ext_resource type="Texture2D" uid="uid://c7pt2fqgv0boh" path="res://Assets/Sprites/Buttons/Buttons!!/Ram Buttons.png" id="3_bcwcm"]
-[ext_resource type="Texture2D" uid="uid://db4b5k1a4s1a6" path="res://Assets/Sprites/Buttons/ExitPress.png" id="3_nxlvx"]
-[ext_resource type="Texture2D" uid="uid://0oym0t850rgl" path="res://Assets/Sprites/Icon/CakeSprite.png" id="4_8jg3k"]
-[ext_resource type="Texture2D" uid="uid://rqeksc0jj05x" path="res://Assets/Sprites/Buttons/Buttons!!/Ram Buttonss.png" id="4_nxlvx"]
-[ext_resource type="AudioStream" uid="uid://bgoxdn4dn1wny" path="res://Assets/Music/SoundEffects/Button/button_fx_low_003_cc0_avr.wav" id="5_8tbwf"]
-[ext_resource type="Texture2D" uid="uid://cmkpnyfp3oedl" path="res://Assets/Sprites/Icon/CakeSpriteHover.png" id="5_kmc10"]
+[ext_resource type="Texture2D" uid="uid://cumvectu7lb8o" path="res://Assets/Sprites/SelectCharacter/Backhround.png" id="2_bcwcm"]
+[ext_resource type="Texture2D" uid="uid://bc54ulrcsf8hb" path="res://Assets/Sprites/SelectCharacter/ButtosToggle-Recovered.png" id="3_1ycsb"]
+[ext_resource type="Texture2D" uid="uid://4ijw037ryn82" path="res://Assets/Sprites/SelectCharacter/ConfirmButton.png" id="4_8jg3k"]
+[ext_resource type="Texture2D" uid="uid://b8xlcfj428i58" path="res://Assets/Sprites/SelectCharacter/SpriteWoman.png" id="5_kmc10"]
+[ext_resource type="Texture2D" uid="uid://b4ax5lp1no7kh" path="res://Assets/Sprites/SelectCharacter/SpriteMan.png" id="6_270ec"]
+[ext_resource type="Texture2D" uid="uid://xq8f3grwfnhy" path="res://Assets/Sprites/SelectCharacter/BackButton.png" id="7_bwnws"]
 
-[sub_resource type="Theme" id="Theme_270ec"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8ccv"]
+atlas = ExtResource("3_1ycsb")
+region = Rect2(337.74658, 82.598434, 61.495728, 55.760376)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8jg3k"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(546.3741, 1.036274, 140.1549, 60.91583)
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ow3r"]
+atlas = ExtResource("3_1ycsb")
+region = Rect2(432.22064, 82.407265, 59.583954, 56.780006)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ycsb"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(545.3027, 65.10866, 139.95221, 67.50438)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydvcb"]
+atlas = ExtResource("3_1ycsb")
+region = Rect2(339.7464, 80.24064, 58.946716, 58.628075)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_07inp"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(291.20932, 80.25052, 63.088898, 62.037415)
+[sub_resource type="AtlasTexture" id="AtlasTexture_fda7x"]
+atlas = ExtResource("3_1ycsb")
+region = Rect2(432.93463, 81.55177, 60.539856, 57.990814)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8tbwf"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(354.16522, 81.87727, 62.037415, 62.557358)
+[sub_resource type="AtlasTexture" id="AtlasTexture_pl62y"]
+atlas = ExtResource("4_8jg3k")
+region = Rect2(305.76385, 77.26731, 93.04022, 49.706413)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bcwcm"]
-atlas = ExtResource("4_nxlvx")
-region = Rect2(289.90765, 79.96807, 63.726135, 63.407524)
+[sub_resource type="AtlasTexture" id="AtlasTexture_dm6am"]
+atlas = ExtResource("4_8jg3k")
+region = Rect2(402.05182, 77.48488, 96.2265, 48.11325)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_en4rw"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(418.03925, 80.428856, 59.583954, 61.1771)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysa27"]
+atlas = ExtResource("5_kmc10")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nxlvx"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(477.36154, 79.44921, 61.495758, 62.770256)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcl1w"]
+atlas = ExtResource("6_270ec")
 
-[node name="MainMenu" type="Node2D"]
-script = ExtResource("1_heugc")
+[sub_resource type="AtlasTexture" id="AtlasTexture_o114n"]
+atlas = ExtResource("7_bwnws")
+region = Rect2(308.63153, 86.21678, 59.26535, 52.255447)
 
-[node name="BackgroundImage" type="Node2D" parent="."]
-position = Vector2(63, -25)
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqvuk"]
+atlas = ExtResource("7_bwnws")
+region = Rect2(369.49005, 87.158264, 58.309418, 51.29956)
 
-[node name="Sprite2D" type="Sprite2D" parent="BackgroundImage"]
-position = Vector2(516, 351)
-texture = ExtResource("3_8tbwf")
-
-[node name="Label" type="Label" parent="BackgroundImage"]
-offset_left = -19.999996
-offset_top = 64.0
-offset_right = 782.0
-offset_bottom = 185.0
-scale = Vector2(0.95185095, 1.40373)
-theme = SubResource("Theme_270ec")
-theme_override_fonts/font = ExtResource("3_1ycsb")
-theme_override_font_sizes/font_size = 130
-text = "CAKE MAKER"
-
-[node name="TextureButton" type="TextureButton" parent="BackgroundImage"]
-offset_left = 589.0
-offset_top = 182.0
-offset_right = 1089.0
-offset_bottom = 682.0
-texture_normal = ExtResource("4_8jg3k")
-texture_hover = ExtResource("5_kmc10")
-
-[node name="Buttons_Main" type="Control" parent="."]
+[node name="CharacterSelect" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_left = 17.0
-offset_top = 509.0
-offset_right = 307.0
-offset_bottom = 720.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8tbwf")
 
-[node name="Start" type="TextureButton" parent="Buttons_Main"]
-layout_mode = 0
-offset_left = 19.0
-offset_top = -12.999985
-offset_right = 159.0
-offset_bottom = 47.000015
-scale = Vector2(1.9292322, 2.0131547)
-texture_normal = SubResource("AtlasTexture_8jg3k")
-texture_hover = SubResource("AtlasTexture_1ycsb")
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bcwcm")
 
-[node name="MuteBgm" type="TextureButton" parent="Buttons_Main"]
+[node name="Male_Button" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 300.0
-offset_top = -3.0
-offset_right = 363.0
-offset_bottom = 59.0
-scale = Vector2(1.8556699, 1.6695031)
+offset_left = 318.0
+offset_top = 401.0
+offset_right = 445.0
+offset_bottom = 510.0
 toggle_mode = true
-texture_normal = SubResource("AtlasTexture_07inp")
-texture_pressed = SubResource("AtlasTexture_8tbwf")
-texture_hover = SubResource("AtlasTexture_bcwcm")
+texture_normal = SubResource("AtlasTexture_n8ccv")
+texture_hover = SubResource("AtlasTexture_4ow3r")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Quit" type="TextureButton" parent="Buttons_Main"]
+[node name="FemaleButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.65300006
+anchor_bottom = 0.5
+offset_left = 718.0
+offset_top = 397.0
+offset_right = 79.74396
+offset_bottom = 185.0
+toggle_mode = true
+texture_normal = SubResource("AtlasTexture_ydvcb")
+texture_hover = SubResource("AtlasTexture_fda7x")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ConfirmButton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 430.0
-offset_top = -4.0000076
-offset_right = 489.0
-offset_bottom = 56.999992
-scale = Vector2(1.7149135, 1.6517513)
-texture_normal = SubResource("AtlasTexture_en4rw")
-texture_pressed = ExtResource("3_nxlvx")
-texture_hover = SubResource("AtlasTexture_nxlvx")
+offset_left = 857.0
+offset_top = 487.0
+offset_right = 1129.0
+offset_bottom = 627.0
+texture_normal = SubResource("AtlasTexture_pl62y")
+texture_hover = SubResource("AtlasTexture_dm6am")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="Press" type="AudioStreamPlayer2D" parent="Buttons_Main/Quit"]
-stream = ExtResource("5_8tbwf")
-volume_db = -16.155
+[node name="Female_Chef" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 625.0
+offset_top = 89.0
+offset_right = 917.0
+offset_bottom = 396.0
+texture = SubResource("AtlasTexture_ysa27")
+expand_mode = 1
+
+[node name="Male_Chef" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 235.0
+offset_top = 33.0
+offset_right = 537.0
+offset_bottom = 452.0
+texture = SubResource("AtlasTexture_kcl1w")
+stretch_mode = 5
+
+[node name="BackButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1030.0
+offset_top = 15.0
+offset_right = 1129.0
+offset_bottom = 109.0
+texture_normal = SubResource("AtlasTexture_o114n")
+texture_hover = SubResource("AtlasTexture_aqvuk")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="FadeTransition" parent="." instance=ExtResource("2_1ycsb")]
-visible = false
-offset_left = 43.000004
-offset_top = 39.0
-offset_right = 43.000004
-offset_bottom = 39.0
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
 
-[node name="FadeTimer" type="Timer" parent="FadeTransition"]
-one_shot = true
-
-[connection signal="pressed" from="Buttons_Main/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Buttons_Main/MuteBgm" to="." method="_on_mute_bgm_pressed"]
-[connection signal="toggled" from="Buttons_Main/MuteBgm" to="." method="_on_mute_bgm_toggled"]
-[connection signal="pressed" from="Buttons_Main/Quit" to="." method="_on_quit_pressed"]
-[connection signal="timeout" from="FadeTransition/FadeTimer" to="." method="_on_fade_timer_timeout"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

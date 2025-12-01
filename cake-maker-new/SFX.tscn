@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://celd73cwsuil2"]
+
+[ext_resource type="Script" path="res://press.gd" id="1_qycp2"]
+
+[node name="Press" type="Node"]
+script = ExtResource("1_qycp2")
+
+[node name="ButtonPress" type="AudioStreamPlayer2D" parent="."]

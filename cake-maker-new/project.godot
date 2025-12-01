@@ -22,3 +22,4 @@ buses/default_bus_layout="res://Assets/Music/default_bus_layout.tres"
 
 MusicPlayer="*res://Autoloads/MusicPlayer.tscn"
 Global="*res://Autoloads/global.gd"
+SFX="*res://press.gd"
