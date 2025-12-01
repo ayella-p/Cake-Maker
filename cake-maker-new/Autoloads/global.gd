@@ -6,6 +6,20 @@ var cake_stack = []
 #game level
 var current_level = 1
 
+#push item
+func push(item_name):
+	cake_stack.push_back(item_name)
+	print("PUSHED:", item_name, " | Stack:", cake_stack)
+
+#pop item
+func pop():
+	if not cake_stack.is_empty():
+		var removed = cake_stack.pop_back()
+		print("POPPED:", removed, " | Stack:", cake_stack)
+		return removed
+	else:
+		print("Stack Underflow! (Nothing to pop)")
+		return null
 #like switch statement
 var level_data = {
 	1: {

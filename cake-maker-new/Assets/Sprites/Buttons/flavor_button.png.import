@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsn8de8hg7uij"
-path="res://.godot/imported/square_cake.png-6876140a857524c59c53e990cd1d18e8.ctex"
+uid="uid://4gapib7to7re"
+path="res://.godot/imported/flavor_button.png-47cdefe0dc8d8d92ac911b22ab85f664.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Icon/square_cake.png"
-dest_files=["res://.godot/imported/square_cake.png-6876140a857524c59c53e990cd1d18e8.ctex"]
+source_file="res://Assets/Sprites/Buttons/flavor_button.png"
+dest_files=["res://.godot/imported/flavor_button.png-47cdefe0dc8d8d92ac911b22ab85f664.ctex"]
 
 [params]
 
