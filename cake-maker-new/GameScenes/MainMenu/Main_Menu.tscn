@@ -2,44 +2,49 @@
 
 [ext_resource type="Script" uid="uid://i6utlo3lkixu" path="res://GameScenes/MainMenu/main_menu.gd" id="1_heugc"]
 [ext_resource type="PackedScene" uid="uid://b8opvrf2ka2hs" path="res://Assets/Sprites/Animation/color_rect.tscn" id="2_1ycsb"]
-[ext_resource type="FontFile" uid="uid://u5egi6qa7ntk" path="res://Assets/Sprites/Fonts/Hello Larry.otf" id="3_1ycsb"]
-[ext_resource type="Texture2D" uid="uid://o2t7iw2383yc" path="res://Assets/Sprites/Background/Background.png" id="3_8tbwf"]
-[ext_resource type="Texture2D" uid="uid://c7pt2fqgv0boh" path="res://Assets/Sprites/Buttons/Buttons!!/Ram Buttons.png" id="3_bcwcm"]
-[ext_resource type="Texture2D" uid="uid://db4b5k1a4s1a6" path="res://Assets/Sprites/Buttons/ExitPress.png" id="3_nxlvx"]
+[ext_resource type="Texture2D" uid="uid://03qxkn2ppavp" path="res://Assets/Sprites/MainMenu/BackgroundCake.png" id="2_8jg3k"]
+[ext_resource type="Texture2D" uid="uid://dqnu8gcgbjxba" path="res://Assets/Sprites/MainMenu/CAKEMAKER.png" id="3_1ycsb"]
 [ext_resource type="Texture2D" uid="uid://0oym0t850rgl" path="res://Assets/Sprites/Icon/CakeSprite.png" id="4_8jg3k"]
-[ext_resource type="Texture2D" uid="uid://rqeksc0jj05x" path="res://Assets/Sprites/Buttons/Buttons!!/Ram Buttonss.png" id="4_nxlvx"]
-[ext_resource type="AudioStream" uid="uid://bgoxdn4dn1wny" path="res://Assets/Music/SoundEffects/Button/button_fx_low_003_cc0_avr.wav" id="5_8tbwf"]
 [ext_resource type="Texture2D" uid="uid://cmkpnyfp3oedl" path="res://Assets/Sprites/Icon/CakeSpriteHover.png" id="5_kmc10"]
-
-[sub_resource type="Theme" id="Theme_270ec"]
+[ext_resource type="Texture2D" uid="uid://cyujcmv3tvj74" path="res://Assets/Sprites/MainMenu/StartButton.png" id="6_kmc10"]
+[ext_resource type="Texture2D" uid="uid://6xal6mdbwe6f" path="res://Assets/Sprites/MainMenu/MuteButton.png" id="7_270ec"]
+[ext_resource type="Texture2D" uid="uid://re7ilnyb3xjg" path="res://Assets/Sprites/MainMenu/QuitButton.png" id="8_bwnws"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8jg3k"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(546.3741, 1.036274, 140.1549, 60.91583)
+atlas = ExtResource("3_1ycsb")
+region = Rect2(12.599762, 14.162872, 541.2002, 227.70007)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1ycsb"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(545.3027, 65.10866, 139.95221, 67.50438)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmc10"]
+atlas = ExtResource("3_1ycsb")
+region = Rect2(22.69973, 387.3499, 669.90015, 214.50006)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_07inp"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(291.20932, 80.25052, 63.088898, 62.037415)
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdr04"]
+atlas = ExtResource("6_kmc10")
+region = Rect2(323.02704, 87.04352, 112.80994, 61.49414)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8tbwf"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(354.16522, 81.87727, 62.037415, 62.557358)
+[sub_resource type="AtlasTexture" id="AtlasTexture_knuhj"]
+atlas = ExtResource("6_kmc10")
+region = Rect2(438.14093, 89.68079, 109.84125, 57.253166)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bcwcm"]
-atlas = ExtResource("4_nxlvx")
-region = Rect2(289.90765, 79.96807, 63.726135, 63.407524)
+[sub_resource type="AtlasTexture" id="AtlasTexture_flpq7"]
+atlas = ExtResource("7_270ec")
+region = Rect2(353.75443, 81.03362, 62.76645, 61.91825)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_en4rw"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(418.03925, 80.428856, 59.583954, 61.1771)
+[sub_resource type="AtlasTexture" id="AtlasTexture_2l2mr"]
+atlas = ExtResource("7_270ec")
+region = Rect2(416.94495, 82.305916, 62.342346, 60.645958)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nxlvx"]
-atlas = ExtResource("3_bcwcm")
-region = Rect2(477.36154, 79.44921, 61.495758, 62.770256)
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjtvj"]
+atlas = ExtResource("7_270ec")
+region = Rect2(481.8319, 82.33706, 61.918213, 59.797752)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cx8f"]
+atlas = ExtResource("8_bwnws")
+region = Rect2(329.58087, 74.43438, 53.860382, 52.163994)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07de5"]
+atlas = ExtResource("8_bwnws")
+region = Rect2(385.13763, 76.98901, 50.891724, 48.771217)
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_heugc")
@@ -47,28 +52,28 @@ script = ExtResource("1_heugc")
 [node name="BackgroundImage" type="Node2D" parent="."]
 position = Vector2(63, -25)
 
-[node name="Sprite2D" type="Sprite2D" parent="BackgroundImage"]
+[node name="Background" type="Sprite2D" parent="BackgroundImage"]
 position = Vector2(516, 351)
-texture = ExtResource("3_8tbwf")
+texture = ExtResource("2_8jg3k")
 
-[node name="Label" type="Label" parent="BackgroundImage"]
-offset_left = -19.999996
-offset_top = 64.0
-offset_right = 782.0
-offset_bottom = 185.0
-scale = Vector2(0.95185095, 1.40373)
-theme = SubResource("Theme_270ec")
-theme_override_fonts/font = ExtResource("3_1ycsb")
-theme_override_font_sizes/font_size = 130
-text = "CAKE MAKER"
+[node name="Cake" type="Sprite2D" parent="BackgroundImage"]
+position = Vector2(188.25, 197.00002)
+scale = Vector2(0.8955638, 0.90969163)
+texture = SubResource("AtlasTexture_8jg3k")
 
-[node name="TextureButton" type="TextureButton" parent="BackgroundImage"]
-offset_left = 589.0
-offset_top = 182.0
-offset_right = 1089.0
-offset_bottom = 682.0
-texture_normal = ExtResource("4_8jg3k")
-texture_hover = ExtResource("5_kmc10")
+[node name="Maker" type="Sprite2D" parent="BackgroundImage"]
+position = Vector2(744.25, 196)
+texture = SubResource("AtlasTexture_kmc10")
+
+[node name="CakeSpriteHover" type="Sprite2D" parent="BackgroundImage"]
+position = Vector2(684, 537)
+scale = Vector2(0.51899993, 0.46400005)
+texture = ExtResource("5_kmc10")
+
+[node name="CakeSprite" type="Sprite2D" parent="BackgroundImage"]
+position = Vector2(888.25, 501.5)
+scale = Vector2(0.7969998, 0.70199996)
+texture = ExtResource("4_8jg3k")
 
 [node name="Buttons_Main" type="Control" parent="."]
 layout_mode = 3
@@ -80,40 +85,35 @@ offset_bottom = 720.0
 
 [node name="Start" type="TextureButton" parent="Buttons_Main"]
 layout_mode = 0
-offset_left = 19.0
-offset_top = -12.999985
-offset_right = 159.0
-offset_bottom = 47.000015
-scale = Vector2(1.9292322, 2.0131547)
-texture_normal = SubResource("AtlasTexture_8jg3k")
-texture_hover = SubResource("AtlasTexture_1ycsb")
+offset_left = 5.0
+offset_top = 20.000015
+offset_right = 117.0
+offset_bottom = 81.000015
+scale = Vector2(1.6429054, 1.6792097)
+texture_normal = SubResource("AtlasTexture_cdr04")
+texture_hover = SubResource("AtlasTexture_knuhj")
 
 [node name="MuteBgm" type="TextureButton" parent="Buttons_Main"]
 layout_mode = 0
-offset_left = 300.0
-offset_top = -3.0
-offset_right = 363.0
-offset_bottom = 59.0
-scale = Vector2(1.8556699, 1.6695031)
+offset_left = 198.0
+offset_top = 23.0
+offset_right = 261.0
+offset_bottom = 85.0
+scale = Vector2(1.6370127, 1.5473062)
 toggle_mode = true
-texture_normal = SubResource("AtlasTexture_07inp")
-texture_pressed = SubResource("AtlasTexture_8tbwf")
-texture_hover = SubResource("AtlasTexture_bcwcm")
+texture_normal = SubResource("AtlasTexture_flpq7")
+texture_pressed = SubResource("AtlasTexture_2l2mr")
+texture_hover = SubResource("AtlasTexture_sjtvj")
 
 [node name="Quit" type="TextureButton" parent="Buttons_Main"]
 layout_mode = 0
-offset_left = 430.0
-offset_top = -4.0000076
-offset_right = 489.0
-offset_bottom = 56.999992
-scale = Vector2(1.7149135, 1.6517513)
-texture_normal = SubResource("AtlasTexture_en4rw")
-texture_pressed = ExtResource("3_nxlvx")
-texture_hover = SubResource("AtlasTexture_nxlvx")
-
-[node name="Press" type="AudioStreamPlayer2D" parent="Buttons_Main/Quit"]
-stream = ExtResource("5_8tbwf")
-volume_db = -16.155
+offset_left = 307.0
+offset_top = 21.999992
+offset_right = 360.0
+offset_bottom = 73.99999
+scale = Vector2(1.8554802, 1.8039865)
+texture_normal = SubResource("AtlasTexture_7cx8f")
+texture_hover = SubResource("AtlasTexture_07de5")
 
 [node name="FadeTransition" parent="." instance=ExtResource("2_1ycsb")]
 visible = false
