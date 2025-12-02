@@ -1,0 +1,91 @@
+[gd_scene load_steps=6 format=3 uid="uid://bwx6ir75ab0yu"]
+
+[ext_resource type="Texture2D" uid="uid://dl6vpww08jjtc" path="res://Assets/Sprites/Background/base_background.png" id="1_8vrdj"]
+[ext_resource type="Script" uid="uid://co3l2isd8fm5i" path="res://GameScenes/DecoratingScene/DecoratingScene.gd" id="1_607do"]
+[ext_resource type="Texture2D" uid="uid://4gapib7to7re" path="res://GameScenes/MainGame/flavor_button.png" id="3_afxeg"]
+[ext_resource type="Texture2D" uid="uid://dqgeqsnd4qcui" path="res://Assets/Sprites/Buttons/chef_not_hover.png" id="4_8w56w"]
+[ext_resource type="Texture2D" uid="uid://u8f6tedn5ql" path="res://Assets/Sprites/Buttons/chef_hovered.png" id="5_8lgoi"]
+
+[node name="DecoratingScene" type="Node2D"]
+script = ExtResource("1_607do")
+
+[node name="BaseBackground" type="Sprite2D" parent="."]
+position = Vector2(574, 325)
+scale = Vector2(1.5584239, 1.55314)
+texture = ExtResource("1_8vrdj")
+
+[node name="toppings" type="HBoxContainer" parent="."]
+offset_left = 185.0
+offset_top = 536.0
+offset_right = 998.0
+offset_bottom = 819.0
+alignment = 1
+
+[node name="Sprinkles" type="TextureButton" parent="toppings"]
+layout_mode = 2
+texture_normal = ExtResource("3_afxeg")
+stretch_mode = 4
+
+[node name="Frosting" type="TextureButton" parent="toppings"]
+layout_mode = 2
+texture_normal = ExtResource("3_afxeg")
+stretch_mode = 4
+
+[node name="Cherry" type="TextureButton" parent="toppings"]
+layout_mode = 2
+texture_normal = ExtResource("3_afxeg")
+
+[node name="Drizzle" type="TextureButton" parent="toppings"]
+layout_mode = 2
+texture_normal = ExtResource("3_afxeg")
+
+[node name="flavors" type="HBoxContainer" parent="."]
+visible = false
+offset_left = 232.0
+offset_top = 537.0
+offset_right = 952.0
+offset_bottom = 603.0
+
+[node name="flavor1" type="TextureButton" parent="flavors"]
+layout_mode = 2
+texture_normal = ExtResource("3_afxeg")
+
+[node name="flavor2" type="TextureButton" parent="flavors"]
+layout_mode = 2
+texture_normal = ExtResource("3_afxeg")
+
+[node name="flavor3" type="TextureButton" parent="flavors"]
+layout_mode = 2
+texture_normal = ExtResource("3_afxeg")
+
+[node name="flavor4" type="TextureButton" parent="flavors"]
+layout_mode = 2
+texture_normal = ExtResource("3_afxeg")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NextButton" type="TextureButton" parent="Control"]
+layout_mode = 0
+offset_left = 864.0
+offset_top = 272.0
+offset_right = 1128.0
+offset_bottom = 415.0
+texture_normal = ExtResource("4_8w56w")
+texture_hover = ExtResource("5_8lgoi")
+ignore_texture_size = true
+stretch_mode = 5
+
+[connection signal="visibility_changed" from="toppings" to="." method="_on_toppings_visibility_changed"]
+[connection signal="pressed" from="toppings/Sprinkles" to="." method="_on_toppings_1_pressed"]
+[connection signal="pressed" from="toppings/Frosting" to="." method="_on_topping_2_pressed"]
+[connection signal="pressed" from="toppings/Cherry" to="." method="_on_topping_3_pressed"]
+[connection signal="pressed" from="toppings/Drizzle" to="." method="_on_topping_4_pressed"]
+[connection signal="pressed" from="flavors/flavor1" to="." method="_on_flavor_1_pressed"]
+[connection signal="pressed" from="flavors/flavor2" to="." method="_on_flavor_2_pressed"]
+[connection signal="pressed" from="flavors/flavor3" to="." method="_on_flavor_3_pressed"]
+[connection signal="pressed" from="flavors/flavor4" to="." method="_on_flavor_4_pressed"]
+[connection signal="pressed" from="Control/NextButton" to="." method="_on_next_button_pressed"]
