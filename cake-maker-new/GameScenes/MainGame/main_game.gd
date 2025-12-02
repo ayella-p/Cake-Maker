@@ -98,11 +98,10 @@ func _on_next_pressed():
 		oven_buttons.visible = false
 		flavor_buttons.visible = true
 		
-		
 		next_btn.visible = false
 		
 		phase = 1
 		
 	elif phase == 1:
 		print("Current Stack: ", Global.cake_stack)
-		get_tree().change_scene_to_file("res://GameScenes/DecoratingScene.tscn")
+		get_tree().change_scene_to_file("res://GameScenes/DecoratingScene/DecoratingScene.tscn")
