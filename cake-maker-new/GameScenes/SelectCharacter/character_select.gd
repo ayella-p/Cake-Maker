@@ -1,6 +1,6 @@
 extends Control
 
-
+var selected = ""
 
 @onready var confirm_btn = $ConfirmButton
 @onready var female_button: TextureButton = $FemaleButton
@@ -17,20 +17,20 @@ func _ready():
 	$FadeTransition/AnimationPlayer.play("FadeOut")
 
 func _select_male():
-	Global.character = "male"
+	selected = "male"
 	confirm_btn.visible = true
 	female_button.button_pressed = false
 	SFX.Press()
 
 func _select_female():
-	Global.character = "female"
+	selected = "female"
 	confirm_btn.visible = true
 	male_button.button_pressed = false
 	
 	SFX.Press()
 
 func _confirm():
-	print("Selected: ", Global.character)
+	print("Selected:", selected)
 	get_tree().change_scene_to_file("res://GameScenes/MainGame/main_game.tscn")
 
 
