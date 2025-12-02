@@ -11,14 +11,26 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_select_toppings(name):
-	if Global.cake_stack.has(name):
-		Global.cake_stack.erase(name)
-		print("Removed: ", name, " | Stack: ", Global.cake_stack)
-		
+	var index_remove = -1
+
+	for i in range(Global.cake_stack.size()):
+		if Global.cake_stack[i] == name:
+			index_remove = i
+			break
+	
+	if(index_remove != -1):
+		for i in range(index_remove, Global.cake_stack.size() - 1):
+			Global.cake_stack[i] = Global.cake_stack[i + 1]
+	
+	
+		print("Removed:", name, " | Stack:", Global.cake_stack)
+		Global.cake_stack.resize(Global.cake_stack.size() - 1)
+	
 	if Global.cake_stack.size() >= 4:
 		Global.pop()
 	
 	Global.push(name)
+	
 func _on_toppings_1_pressed() -> void:
 	_on_select_toppings("sprinkles")
 
