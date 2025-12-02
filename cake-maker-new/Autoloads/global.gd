@@ -5,6 +5,7 @@ extends Node
 var cake_stack = []
 #game level
 var current_level = 1
+var character = "";
 
 #push item
 func push(item_name):
