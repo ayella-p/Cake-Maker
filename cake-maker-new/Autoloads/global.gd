@@ -3,6 +3,7 @@ extends Node
 # stack
 #add top (push), and remove top (pop)
 var cake_stack = []
+var target_stack = []
 #game level
 var current_level = 1
 var character = "";
@@ -30,21 +31,39 @@ var level_data = {
 	1: {
 		"customer": "Reah",
 		# array we want to build
-		"target_stack": ["circle_base"], 
+		"target_stack": ["circle_base", "Choco", "Vanilla", "Candle"],
 		"order_form_img": preload("res://Assets/Sprites/OrderForm/first_order.jpg") 
 	},
 	2: {
 		"customer": "John",
-		"target_stack": ["square_base"],
+		"target_stack": ["square_base", "Vanilla", "Chocolate", "Cherry"],
 		"order_form_img": preload("res://Assets/Sprites/OrderForm/first_order.jpg")
 	},
 	3: {
 		"customer": "Sarah",
-		"target_stack": ["heart_base"], 
+		"target_stack": ["heart_base", "Strawberry", "Strawberry", "Sprinkles"], 
 		"order_form_img": preload("res://Assets/Sprites/OrderForm/first_order.jpg")
 	}
 }
-# Called when the node enters the scene tree for the first time.
+func start_level(level_num):
+	current_level = level_num
+	cake_stack = [] 
+	
+	if level_num < 4:
+		target_stack = level_data[level_num]["target_stack"]
+		print("Level ", level_num, " Started! Target: ", target_stack)
+
+func check_win():
+	print("Checking Win...")
+	print("Player Stack: ", cake_stack)
+	print("Target Stack: ", target_stack)
+	
+	if cake_stack == target_stack:
+		print("WIN!")
+		return true
+	else:
+		print("LOSE!")
+		return false
 func _ready() -> void:
 	pass # Replace with function body.
 

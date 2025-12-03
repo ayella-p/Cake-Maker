@@ -6,7 +6,6 @@ var selected = ""
 @onready var female_button: TextureButton = $FemaleButton
 @onready var male_button: TextureButton = $Male_Button
 
-
 func _ready():
 	confirm_btn.visible = false
 	$Male_Button.pressed.connect(_select_male)

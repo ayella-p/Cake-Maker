@@ -1,11 +1,10 @@
-[gd_scene load_steps=88 format=3 uid="uid://fgll768xba3f"]
+[gd_scene load_steps=87 format=3 uid="uid://fgll768xba3f"]
 
 [ext_resource type="Script" uid="uid://djy7wqlb1qlbb" path="res://GameScenes/MainGame/main_game.gd" id="1_m7vas"]
 [ext_resource type="Texture2D" uid="uid://b88cyc3tay4hg" path="res://Assets/Sprites/MainGame/GameBackground.png" id="2_xpngq"]
 [ext_resource type="PackedScene" uid="uid://cfr74c251srni" path="res://GameScenes/MainGame/order.tscn" id="3_ban2i"]
 [ext_resource type="Texture2D" uid="uid://3groew7n7mhl" path="res://Assets/Sprites/MainGame/LeftPanel.png" id="6_aaayk"]
 [ext_resource type="Texture2D" uid="uid://8bv8df3w0njs" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeBases.png" id="6_shrk5"]
-[ext_resource type="Texture2D" path="res://Assets/Sprites/IcingPiping/CakeButtons.png" id="7_shrk5"]
 [ext_resource type="Texture2D" uid="uid://dqgeqsnd4qcui" path="res://Assets/Sprites/Buttons/chef_not_hover.png" id="7_wu7nr"]
 [ext_resource type="Texture2D" uid="uid://tv6kcx17bmop" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorChocolate.png" id="8_5qi62"]
 [ext_resource type="Texture2D" uid="uid://u8f6tedn5ql" path="res://Assets/Sprites/Buttons/chef_hovered.png" id="8_ii3au"]
@@ -42,15 +41,12 @@ atlas = ExtResource("6_shrk5")
 region = Rect2(195.81567, 8.983397, 56.09259, 46.92083)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1fi2i"]
-atlas = ExtResource("7_shrk5")
 region = Rect2(13.718201, 78.80823, 35.549713, 35.286377)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fmyjv"]
-atlas = ExtResource("7_shrk5")
 region = Rect2(64.67443, 82.23154, 29.22976, 28.439774)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v6onc"]
-atlas = ExtResource("7_shrk5")
 region = Rect2(69.15106, 113.56795, 22.383148, 25.806458)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oroy6"]
@@ -294,6 +290,7 @@ mouse_filter = 2
 texture = ExtResource("2_xpngq")
 
 [node name="TableCake" type="TextureRect" parent="."]
+visible = false
 offset_left = 436.0
 offset_top = 199.0
 offset_right = 738.0
@@ -307,6 +304,7 @@ visible = false
 [node name="Display" type="CanvasLayer" parent="."]
 
 [node name="NextButton" type="TextureButton" parent="Display"]
+visible = false
 offset_left = 856.0
 offset_top = 256.0
 offset_right = 1120.0
@@ -322,7 +320,6 @@ scale = Vector2(1.2363762, 1)
 texture = SubResource("AtlasTexture_tbacp")
 
 [node name="OvenButtons" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 
@@ -484,6 +481,7 @@ scale = Vector2(4.846193, 4.326024)
 texture_normal = SubResource("AtlasTexture_l8k71")
 
 [node name="CakeFlavors" type="Node2D" parent="."]
+visible = false
 
 [node name="Choco" type="Node2D" parent="CakeFlavors"]
 
@@ -500,15 +498,14 @@ scale = Vector2(4.5286884, 4.8662796)
 texture = SubResource("AtlasTexture_jky5p")
 
 [node name="ChocoSquare" type="Sprite2D" parent="CakeFlavors/Choco"]
-visible = false
-position = Vector2(545.5, 292.25)
-scale = Vector2(4.013158, 4.3867927)
+position = Vector2(554.5, 297.5)
+scale = Vector2(3.6973684, 3.9433963)
 texture = SubResource("AtlasTexture_aivwl")
 
 [node name="Vanilla" type="Node2D" parent="CakeFlavors"]
 position = Vector2(168, 139)
 
-[node name="VanillaCirc" type="Sprite2D" parent="CakeFlavors/Vanilla"]
+[node name="VanillaCircle" type="Sprite2D" parent="CakeFlavors/Vanilla"]
 visible = false
 position = Vector2(374.5, 158.25002)
 scale = Vector2(4.09375, 4.152174)
@@ -521,50 +518,49 @@ scale = Vector2(4.649999, 5.0060973)
 texture = SubResource("AtlasTexture_bgtnn")
 
 [node name="VanillaSquare" type="Sprite2D" parent="CakeFlavors/Vanilla"]
-visible = false
-position = Vector2(376.625, 154)
-scale = Vector2(4.003333, 4.413461)
+position = Vector2(383.5, 154.00002)
+scale = Vector2(3.6399999, 3.7307692)
 texture = SubResource("AtlasTexture_3obes")
 
 [node name="Strawberry" type="Node2D" parent="CakeFlavors"]
+visible = false
 position = Vector2(526, 354)
 
-[node name="StrawberryCirc" type="Sprite2D" parent="CakeFlavors/Strawberry"]
+[node name="StrawberryCircle" type="Sprite2D" parent="CakeFlavors/Strawberry"]
 visible = false
-position = Vector2(435.5, 199.25)
+position = Vector2(21.999878, -63)
 scale = Vector2(4.1153846, 4.1595745)
 texture = SubResource("AtlasTexture_uqlp7")
 
 [node name="StrawberryHeart" type="Sprite2D" parent="CakeFlavors/Strawberry"]
 visible = false
-position = Vector2(442.875, 200.25)
+position = Vector2(26, -38.999985)
 scale = Vector2(4.6541667, 5.285714)
 texture = SubResource("AtlasTexture_0otc4")
 
 [node name="StrawberrySquare" type="Sprite2D" parent="CakeFlavors/Strawberry"]
-visible = false
-position = Vector2(440.5, 202.25)
-scale = Vector2(4.027027, 4.3846154)
+position = Vector2(31.50001, -57)
+scale = Vector2(3.6351354, 3.8076923)
 texture = SubResource("AtlasTexture_7dirc")
 
 [node name="CakeBase" type="Node2D" parent="."]
 visible = false
 
 [node name="Circle" type="Sprite2D" parent="CakeBase"]
-position = Vector2(585.25, 335.9375)
+visible = false
+position = Vector2(557, 291)
 scale = Vector2(4.085937, 4.307065)
 texture = SubResource("AtlasTexture_dw1lp")
 
 [node name="Heart" type="Sprite2D" parent="CakeBase"]
 visible = false
-position = Vector2(586, 327.06253)
+position = Vector2(559, 297.00003)
 scale = Vector2(4.5806456, 4.9298787)
 texture = SubResource("AtlasTexture_xpngq")
 
 [node name="Square" type="Sprite2D" parent="CakeBase"]
-visible = false
-position = Vector2(587, 325.00003)
-scale = Vector2(3.9499996, 4.3774505)
+position = Vector2(551.9688, 290.59375)
+scale = Vector2(3.654166, 3.741421)
 texture = SubResource("AtlasTexture_aaayk")
 
 [node name="CakeFrosting" type="Node2D" parent="."]
@@ -572,6 +568,7 @@ texture = SubResource("AtlasTexture_aaayk")
 [node name="Choco" type="Node2D" parent="CakeFrosting"]
 
 [node name="FrostingChocoCircle" type="Sprite2D" parent="CakeFrosting/Choco"]
+visible = false
 position = Vector2(542.125, 299.375)
 scale = Vector2(4.0884614, 4.2944446)
 texture = SubResource("AtlasTexture_uynn7")
@@ -584,11 +581,12 @@ texture = SubResource("AtlasTexture_3ux8u")
 
 [node name="FrostingChocoSquare" type="Sprite2D" parent="CakeFrosting/Choco"]
 visible = false
-position = Vector2(546.12506, 290.62497)
-scale = Vector2(4.049999, 4.353773)
+position = Vector2(557.25, 290.5)
+scale = Vector2(3.7, 3.9433966)
 texture = SubResource("AtlasTexture_y3bl0")
 
 [node name="Strawberry" type="Node2D" parent="CakeFrosting"]
+visible = false
 
 [node name="FrostingStrawberryCircle" type="Sprite2D" parent="CakeFrosting/Strawberry"]
 visible = false
@@ -604,11 +602,12 @@ texture = SubResource("AtlasTexture_ms13k")
 
 [node name="FrostingStrawberrySquare" type="Sprite2D" parent="CakeFrosting/Strawberry"]
 visible = false
-position = Vector2(548, 292)
-scale = Vector2(4.1486487, 4.5)
+position = Vector2(555.5, 291)
+scale = Vector2(3.6891892, 3.9245288)
 texture = SubResource("AtlasTexture_uamdd")
 
 [node name="Vanilla" type="Node2D" parent="CakeFrosting"]
+visible = false
 
 [node name="FrostingVanillaCircle" type="Sprite2D" parent="CakeFrosting/Vanilla"]
 visible = false
@@ -624,11 +623,12 @@ texture = SubResource("AtlasTexture_2f0fa")
 
 [node name="FrostingVanillaSquare" type="Sprite2D" parent="CakeFrosting/Vanilla"]
 visible = false
-position = Vector2(547.375, 294.25)
-scale = Vector2(4.1267123, 4.4903846)
+position = Vector2(554.75, 293.25)
+scale = Vector2(3.7534244, 3.8846154)
 texture = SubResource("AtlasTexture_iu02i")
 
 [node name="Ube" type="Node2D" parent="CakeFrosting"]
+visible = false
 
 [node name="FrostingUbeCircle" type="Sprite2D" parent="CakeFrosting/Ube"]
 visible = false
@@ -644,13 +644,15 @@ texture = SubResource("AtlasTexture_jtge3")
 
 [node name="FrostingUbeSquare" type="Sprite2D" parent="CakeFrosting/Ube"]
 visible = false
-position = Vector2(549.25, 291.75)
-scale = Vector2(4.1283784, 4.5096154)
+position = Vector2(554.75, 293.25)
+scale = Vector2(3.637, 3.885)
 texture = SubResource("AtlasTexture_f4p7j")
 
 [node name="CakePiping" type="Node2D" parent="."]
+visible = false
 
 [node name="Circle" type="Node2D" parent="CakePiping"]
+visible = false
 
 [node name="CircleVanilla" type="Sprite2D" parent="CakePiping/Circle"]
 visible = false
@@ -676,6 +678,7 @@ scale = Vector2(3.9018986, 4.495098)
 texture = SubResource("AtlasTexture_f5od8")
 
 [node name="Heart" type="Node2D" parent="CakePiping"]
+visible = false
 
 [node name="HeartVanilla" type="Sprite2D" parent="CakePiping/Heart"]
 visible = false
@@ -702,34 +705,35 @@ scale = Vector2(4.5735292, 4.8599997)
 texture = SubResource("AtlasTexture_lntn0")
 
 [node name="Square" type="Node2D" parent="CakePiping"]
-visible = false
 
 [node name="SquareVanilla" type="Sprite2D" parent="CakePiping/Square"]
-visible = false
-position = Vector2(542, 287)
-scale = Vector2(4.0465107, 4.3551583)
+position = Vector2(556.99994, 284.00003)
+scale = Vector2(3.672239, 4.1975093)
 texture = SubResource("AtlasTexture_ruhtg")
 
 [node name="SquareChocolate" type="Sprite2D" parent="CakePiping/Square"]
 visible = false
-position = Vector2(546, 291)
-scale = Vector2(4.005953, 4.3299174)
+position = Vector2(556, 291)
+scale = Vector2(3.6294892, 4.1070204)
 texture = SubResource("AtlasTexture_fdquw")
 
 [node name="SquareStrawberry" type="Sprite2D" parent="CakePiping/Square"]
 visible = false
-position = Vector2(549.00006, 285.25003)
-scale = Vector2(3.967647, 4.4083343)
+position = Vector2(560, 280.00003)
+scale = Vector2(3.6308098, 4.396409)
 texture = SubResource("AtlasTexture_57dla")
 
 [node name="SquareUbe" type="Sprite2D" parent="CakePiping/Square"]
-position = Vector2(549.15625, 285.625)
-scale = Vector2(3.949265, 4.454167)
+visible = false
+position = Vector2(556, 285)
+scale = Vector2(3.677038, 4.228455)
 texture = SubResource("AtlasTexture_0ga04")
 
 [node name="CakeTopping" type="Node2D" parent="."]
+visible = false
 
 [node name="Circle" type="Node2D" parent="CakeTopping"]
+visible = false
 
 [node name="CircleCandle" type="Sprite2D" parent="CakeTopping/Circle"]
 visible = false
@@ -785,26 +789,25 @@ texture = SubResource("AtlasTexture_vo6xi")
 
 [node name="SquareCandle" type="Sprite2D" parent="CakeTopping/Square"]
 visible = false
-position = Vector2(539.00006, 187)
+position = Vector2(547.00006, 188)
 scale = Vector2(2.7727273, 4.1842103)
 texture = SubResource("AtlasTexture_k7ig5")
 
 [node name="SquareSprinkles" type="Sprite2D" parent="CakeTopping/Square"]
 visible = false
-position = Vector2(547, 224)
-scale = Vector2(3.999999, 3.611111)
+position = Vector2(559, 240)
+scale = Vector2(3.4154, 3.3087928)
 texture = SubResource("AtlasTexture_yxge0")
 
 [node name="SquareDrizzle" type="Sprite2D" parent="CakeTopping/Square"]
 visible = false
-position = Vector2(544.875, 246.49998)
-scale = Vector2(4.053797, 4.9749994)
+position = Vector2(557.00006, 262)
+scale = Vector2(3.6090722, 4.0537024)
 texture = SubResource("AtlasTexture_sic46")
 
 [node name="SquareCherry" type="Sprite2D" parent="CakeTopping/Square"]
-visible = false
-position = Vector2(545, 192)
-scale = Vector2(4.0064936, 4.207317)
+position = Vector2(557, 204)
+scale = Vector2(3.747056, 4.434707)
 texture = SubResource("AtlasTexture_0v5gj")
 
 [connection signal="pressed" from="Display/NextButton" to="." method="_on_next_button_pressed"]
