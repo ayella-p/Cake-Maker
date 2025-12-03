@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3qtohdxol312"
-path="res://.godot/imported/CakeButtons.png-f5a6fd7455ce6abca249bcbb78e5e0da.ctex"
+path="res://.godot/imported/CakeButtons.png-34ed3ef9cafa88bc45a3f73de7b56e41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/IcingPiping/CakeButtons.png"
-dest_files=["res://.godot/imported/CakeButtons.png-f5a6fd7455ce6abca249bcbb78e5e0da.ctex"]
+source_file="res://Assets/Sprites/MainGame/CakeButtons.png"
+dest_files=["res://.godot/imported/CakeButtons.png-34ed3ef9cafa88bc45a3f73de7b56e41.ctex"]
 
 [params]
 

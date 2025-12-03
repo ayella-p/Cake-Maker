@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3y7kgg7evg41"
-path="res://.godot/imported/CakePipingChocolate.png-894a6dfd409c7f34747bbe06d6ae37e8.ctex"
+uid="uid://cq5kj21fvgcvj"
+path="res://.godot/imported/CakeFrostingUbe.png-3e8a5f37b9cd8c5d3cf3394185c16911.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/IcingPiping/CakePipingChocolate.png"
-dest_files=["res://.godot/imported/CakePipingChocolate.png-894a6dfd409c7f34747bbe06d6ae37e8.ctex"]
+source_file="res://Assets/Sprites/MainGame/Frosting/CakeFrostingUbe.png"
+dest_files=["res://.godot/imported/CakeFrostingUbe.png-3e8a5f37b9cd8c5d3cf3394185c16911.ctex"]
 
 [params]
 

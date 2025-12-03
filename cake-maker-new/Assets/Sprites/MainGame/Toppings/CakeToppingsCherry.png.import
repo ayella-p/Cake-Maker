@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpf1jiotxu5jd"
-path="res://.godot/imported/CakePipingVanilla.png-6eb564cd728ada05f94e71e7be3a4a53.ctex"
+uid="uid://bpgm5e1rdtw46"
+path="res://.godot/imported/CakeToppingsCherry.png-5378dfbcfc653765f14bb94bba9f54e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/IcingPiping/CakePipingVanilla.png"
-dest_files=["res://.godot/imported/CakePipingVanilla.png-6eb564cd728ada05f94e71e7be3a4a53.ctex"]
+source_file="res://Assets/Sprites/MainGame/Toppings/CakeToppingsCherry.png"
+dest_files=["res://.godot/imported/CakeToppingsCherry.png-5378dfbcfc653765f14bb94bba9f54e8.ctex"]
 
 [params]
 

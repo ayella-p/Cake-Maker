@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq5kj21fvgcvj"
-path="res://.godot/imported/CakeFrostingUbe.png-c7a110e64739f59cc17aaee027c33301.ctex"
+uid="uid://3groew7n7mhl"
+path="res://.godot/imported/LeftPanel.png-d2c4c92d8903880235db0b84160ac430.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/IcingPiping/CakeFrostingUbe.png"
-dest_files=["res://.godot/imported/CakeFrostingUbe.png-c7a110e64739f59cc17aaee027c33301.ctex"]
+source_file="res://Assets/Sprites/MainGame/LeftPanel.png"
+dest_files=["res://.godot/imported/LeftPanel.png-d2c4c92d8903880235db0b84160ac430.ctex"]
 
 [params]
 

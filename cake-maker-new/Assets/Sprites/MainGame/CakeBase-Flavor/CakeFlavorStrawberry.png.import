@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4cmrcti3ix02"
-path="res://.godot/imported/CakePipingStrawberry.png-4d2b426104b8aad77b52d4b89d42cd5d.ctex"
+uid="uid://du16sgt4a1rqt"
+path="res://.godot/imported/CakeFlavorStrawberry.png-f13ec622ba40c2ff9572e6e3fd2f9103.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/IcingPiping/CakePipingStrawberry.png"
-dest_files=["res://.godot/imported/CakePipingStrawberry.png-4d2b426104b8aad77b52d4b89d42cd5d.ctex"]
+source_file="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorStrawberry.png"
+dest_files=["res://.godot/imported/CakeFlavorStrawberry.png-f13ec622ba40c2ff9572e6e3fd2f9103.ctex"]
 
 [params]
 

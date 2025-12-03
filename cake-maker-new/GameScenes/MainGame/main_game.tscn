@@ -1,12 +1,33 @@
-[gd_scene load_steps=14 format=3 uid="uid://fgll768xba3f"]
+[gd_scene load_steps=88 format=3 uid="uid://fgll768xba3f"]
 
 [ext_resource type="Script" uid="uid://djy7wqlb1qlbb" path="res://GameScenes/MainGame/main_game.gd" id="1_m7vas"]
-[ext_resource type="Texture2D" uid="uid://dl6vpww08jjtc" path="res://Assets/Sprites/Background/base_background.png" id="2_v0bl5"]
+[ext_resource type="Texture2D" uid="uid://b88cyc3tay4hg" path="res://Assets/Sprites/MainGame/GameBackground.png" id="2_xpngq"]
 [ext_resource type="PackedScene" uid="uid://cfr74c251srni" path="res://GameScenes/MainGame/order.tscn" id="3_ban2i"]
+[ext_resource type="Texture2D" uid="uid://3groew7n7mhl" path="res://Assets/Sprites/MainGame/LeftPanel.png" id="6_aaayk"]
 [ext_resource type="Texture2D" uid="uid://8bv8df3w0njs" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeBases.png" id="6_shrk5"]
-[ext_resource type="Texture2D" uid="uid://b3qtohdxol312" path="res://Assets/Sprites/IcingPiping/CakeButtons.png" id="7_shrk5"]
+[ext_resource type="Texture2D" path="res://Assets/Sprites/IcingPiping/CakeButtons.png" id="7_shrk5"]
 [ext_resource type="Texture2D" uid="uid://dqgeqsnd4qcui" path="res://Assets/Sprites/Buttons/chef_not_hover.png" id="7_wu7nr"]
+[ext_resource type="Texture2D" uid="uid://tv6kcx17bmop" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorChocolate.png" id="8_5qi62"]
 [ext_resource type="Texture2D" uid="uid://u8f6tedn5ql" path="res://Assets/Sprites/Buttons/chef_hovered.png" id="8_ii3au"]
+[ext_resource type="Texture2D" uid="uid://dodx0ddff2xm2" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorVanilla.png" id="9_1fi2i"]
+[ext_resource type="Texture2D" uid="uid://b3qtohdxol312" path="res://Assets/Sprites/MainGame/CakeButtons.png" id="9_vso7p"]
+[ext_resource type="Texture2D" uid="uid://du16sgt4a1rqt" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorStrawberry.png" id="10_fmyjv"]
+[ext_resource type="Texture2D" uid="uid://bscr8ouv5k4rs" path="res://Assets/Sprites/MainGame/Frosting/CakeFrostingChocolate.png" id="13_g2twb"]
+[ext_resource type="Texture2D" uid="uid://cb806gm8w47cu" path="res://Assets/Sprites/MainGame/Frosting/CakeFrostingStrawberry.png" id="14_yqmiu"]
+[ext_resource type="Texture2D" uid="uid://ciqgki1atmpfr" path="res://Assets/Sprites/MainGame/Frosting/CakeFrostingVanilla.png" id="15_hhw2o"]
+[ext_resource type="Texture2D" uid="uid://cq5kj21fvgcvj" path="res://Assets/Sprites/MainGame/Frosting/CakeFrostingUbe.png" id="16_mn67t"]
+[ext_resource type="Texture2D" uid="uid://e38oqdoybsaw" path="res://Assets/Sprites/MainGame/Pipings/CakePipingVanilla.png" id="17_3icxt"]
+[ext_resource type="Texture2D" uid="uid://e334r3v7ewax" path="res://Assets/Sprites/MainGame/Pipings/CakePipingStrawberry.png" id="18_lnkhi"]
+[ext_resource type="Texture2D" uid="uid://b62y2qg1j1r6f" path="res://Assets/Sprites/MainGame/Pipings/CakePipingChocolate.png" id="19_p6i81"]
+[ext_resource type="Texture2D" uid="uid://dfj5k4hriugsr" path="res://Assets/Sprites/MainGame/Pipings/CakePipingUbe.png" id="20_iumw5"]
+[ext_resource type="Texture2D" uid="uid://vwws5pnwtpeg" path="res://Assets/Sprites/MainGame/Toppings/CakeToppingCandle.png" id="21_vmt2b"]
+[ext_resource type="Texture2D" uid="uid://bnb5efk6kehov" path="res://Assets/Sprites/MainGame/Toppings/CakeToppingSprinkles.png" id="22_da5ad"]
+[ext_resource type="Texture2D" uid="uid://ex6k3soox0ub" path="res://Assets/Sprites/MainGame/Toppings/CakeToppingsChocoDrizzle.png" id="23_6nej8"]
+[ext_resource type="Texture2D" uid="uid://bpgm5e1rdtw46" path="res://Assets/Sprites/MainGame/Toppings/CakeToppingsCherry.png" id="24_ijeb3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbacp"]
+atlas = ExtResource("6_aaayk")
+region = Rect2(0, 0, 231.79617, 648)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wu7nr"]
 atlas = ExtResource("6_shrk5")
@@ -32,6 +53,230 @@ region = Rect2(64.67443, 82.23154, 29.22976, 28.439774)
 atlas = ExtResource("7_shrk5")
 region = Rect2(69.15106, 113.56795, 22.383148, 25.806458)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_oroy6"]
+atlas = ExtResource("9_vso7p")
+region = Rect2(36.108765, 2.4096699, 26.21695, 59.37368)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_osclw"]
+atlas = ExtResource("9_vso7p")
+region = Rect2(66.51035, 1.3954811, 25.235565, 62.037426)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtpkm"]
+atlas = ExtResource("9_vso7p")
+region = Rect2(6.835003, 1.0284605, 25.586056, 60.985943)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vn5o"]
+atlas = ExtResource("9_vso7p")
+region = Rect2(97.58217, 2.013132, 23.462814, 60.539864)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogk1a"]
+atlas = ExtResource("9_vso7p")
+region = Rect2(199.89992, 114.49484, 15.188217, 28.031204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0hp2"]
+atlas = ExtResource("9_vso7p")
+region = Rect2(99.73726, 114.55704, 20.929016, 25.016724)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uiquw"]
+atlas = ExtResource("9_vso7p")
+region = Rect2(133.2148, 115.0264, 20.661453, 26.012634)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8k71"]
+atlas = ExtResource("9_vso7p")
+region = Rect2(165.64798, 115.65084, 19.175018, 25.86399)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nnmf6"]
+atlas = ExtResource("8_5qi62")
+region = Rect2(-0.27983093, 9.470434, 64.30548, 45.766968)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jky5p"]
+atlas = ExtResource("8_5qi62")
+region = Rect2(129.00568, 11.5832405, 61.988174, 43.159985)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aivwl"]
+atlas = ExtResource("8_5qi62")
+region = Rect2(65.279526, 71.895676, 76.76105, 53.29824)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4onlm"]
+atlas = ExtResource("9_1fi2i")
+region = Rect2(0.3022995, 8.93409, 64.595146, 46.63596)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgtnn"]
+atlas = ExtResource("9_1fi2i")
+region = Rect2(129.585, 13.062786, 60.829514, 41.711662)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3obes"]
+atlas = ExtResource("9_1fi2i")
+region = Rect2(65.5692, 72.475006, 75.60239, 52.429245)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqlp7"]
+atlas = ExtResource("10_fmyjv")
+region = Rect2(-0.55570984, 7.9313545, 65.17448, 47.50495)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0otc4"]
+atlas = ExtResource("10_fmyjv")
+region = Rect2(129.585, 11.70694, 60.829514, 42.001328)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dirc"]
+atlas = ExtResource("10_fmyjv")
+region = Rect2(66.43819, 72.76467, 74.15407, 52.429245)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dw1lp"]
+atlas = ExtResource("6_shrk5")
+region = Rect2(0.6480408, 9.534506, 64.59514, 46.34629)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpngq"]
+atlas = ExtResource("6_shrk5")
+region = Rect2(128.42635, 13.020518, 62.567505, 41.422)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aaayk"]
+atlas = ExtResource("6_shrk5")
+region = Rect2(65.85886, 72.18534, 75.023056, 51.849915)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uynn7"]
+atlas = ExtResource("13_g2twb")
+region = Rect2(0.39517593, 10.395616, 65.46858, 45.144547)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ux8u"]
+atlas = ExtResource("13_g2twb")
+region = Rect2(129.11905, 10.955681, 61.28441, 43.56938)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3bl0"]
+atlas = ExtResource("13_g2twb")
+region = Rect2(65.680115, 71.44733, 75.16916, 53.623863)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pqeh"]
+atlas = ExtResource("14_yqmiu")
+region = Rect2(-0.0883255, 9.747547, 66.812126, 45.919743)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ms13k"]
+atlas = ExtResource("14_yqmiu")
+region = Rect2(129.35844, 10.056821, 60.08745, 44.52695)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uamdd"]
+atlas = ExtResource("14_yqmiu")
+region = Rect2(65.680115, 71.20794, 74.92976, 53.384468)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24s8n"]
+atlas = ExtResource("15_hhw2o")
+region = Rect2(0.5641079, 11.156448, 64.74917, 44.310673)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2f0fa"]
+atlas = ExtResource("15_hhw2o")
+region = Rect2(128.87965, 10.91098, 62.24199, 44.048164)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iu02i"]
+atlas = ExtResource("15_hhw2o")
+region = Rect2(66.1589, 71.92612, 73.732796, 52.1875)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47svn"]
+atlas = ExtResource("16_mn67t")
+region = Rect2(-0.045433044, 10.510484, 66.07225, 45.005737)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtge3"]
+atlas = ExtResource("16_mn67t")
+region = Rect2(129.35844, 10.5216, 60.326843, 44.526955)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f4p7j"]
+atlas = ExtResource("16_mn67t")
+region = Rect2(66.1589, 71.44733, 74.69038, 52.66629)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_skurs"]
+atlas = ExtResource("17_3icxt")
+region = Rect2(20.344189, 6.98386, 76.36612, 50.990543)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_csmww"]
+atlas = ExtResource("18_lnkhi")
+region = Rect2(19.949959, 5.1134233, 77.323685, 54.342037)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t5np4"]
+atlas = ExtResource("19_p6i81")
+region = Rect2(18.907833, 4.13072, 79.238815, 55.538994)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5od8"]
+atlas = ExtResource("20_iumw5")
+region = Rect2(18.4208, 5.820469, 79.717606, 51.70872)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rgyf"]
+atlas = ExtResource("17_3icxt")
+region = Rect2(124.5706, 7.3647976, 70.14192, 50.511757)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_niwhu"]
+atlas = ExtResource("19_p6i81")
+region = Rect2(123.85242, 5.4496593, 68.94496, 51.948105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wwhu"]
+atlas = ExtResource("18_lnkhi")
+region = Rect2(125.28877, 6.117569, 68.46619, 50.990543)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lntn0"]
+atlas = ExtResource("20_iumw5")
+region = Rect2(125.28877, 6.4910703, 68.70557, 50.511757)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ruhtg"]
+atlas = ExtResource("17_3icxt")
+region = Rect2(59.695305, 64.98374, 86.65998, 63.678337)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdquw"]
+atlas = ExtResource("19_p6i81")
+region = Rect2(61.37105, 67.138275, 84.50546, 61.763184)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57dla"]
+atlas = ExtResource("18_lnkhi")
+region = Rect2(61.610443, 65.94131, 85.22363, 60.805626)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ga04"]
+atlas = ExtResource("20_iumw5")
+region = Rect2(61.37105, 66.659485, 85.70242, 60.326843)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxbyc"]
+atlas = ExtResource("21_vmt2b")
+region = Rect2(51.295853, 5.9353456, 11.870689, 13.66928)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5mxqh"]
+atlas = ExtResource("22_da5ad")
+region = Rect2(23.505604, 5.9888916, 71.40401, 34.892635)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxrq1"]
+atlas = ExtResource("23_6nej8")
+region = Rect2(23.150341, 5.5823054, 67.62697, 37.59052)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2y5k"]
+atlas = ExtResource("24_ijeb3")
+region = Rect2(23.146936, 1.5052271, 67.26725, 21.762932)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8w7j1"]
+atlas = ExtResource("21_vmt2b")
+region = Rect2(155.44427, 9.862047, 10.164322, 16.473225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_673hs"]
+atlas = ExtResource("22_da5ad")
+region = Rect2(130.0448, 6.5550985, 59.091583, 33.601097)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25dvd"]
+atlas = ExtResource("23_6nej8")
+region = Rect2(127.846825, 6.0071077, 63.72622, 39.684055)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo6xi"]
+atlas = ExtResource("24_ijeb3")
+region = Rect2(131.90213, 4.310396, 56.484604, 26.938812)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7ig5"]
+atlas = ExtResource("21_vmt2b")
+region = Rect2(89.43738, 63.976105, 22.431633, 19.62767)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxge0"]
+atlas = ExtResource("22_da5ad")
+region = Rect2(68.17122, 66.341675, 71.8513, 36.1009)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sic46"]
+atlas = ExtResource("23_6nej8")
+region = Rect2(63.965294, 64.5892, 79.91267, 40.657326)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0v5gj"]
+atlas = ExtResource("24_ijeb3")
+region = Rect2(64.31579, 63.53772, 77.8097, 22.78212)
+
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_m7vas")
 
@@ -46,7 +291,7 @@ offset_bottom = 643.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("2_v0bl5")
+texture = ExtResource("2_xpngq")
 
 [node name="TableCake" type="TextureRect" parent="."]
 offset_left = 436.0
@@ -71,7 +316,13 @@ texture_hover = ExtResource("8_ii3au")
 ignore_texture_size = true
 stretch_mode = 5
 
+[node name="LeftPanel" type="Sprite2D" parent="."]
+position = Vector2(142.00002, 320)
+scale = Vector2(1.2363762, 1)
+texture = SubResource("AtlasTexture_tbacp")
+
 [node name="OvenButtons" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 
@@ -106,6 +357,7 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="FlavorButtons" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 307.0
@@ -115,29 +367,444 @@ offset_bottom = 609.0
 
 [node name="ChocolateFlavor" type="TextureButton" parent="FlavorButtons"]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 20.00003
-offset_right = 48.0
-offset_bottom = 55.00003
+offset_left = -247.99997
+offset_top = -382.99994
+offset_right = -212.99997
+offset_bottom = -347.99994
 scale = Vector2(3.8729217, 3.6942573)
 texture_normal = SubResource("AtlasTexture_1fi2i")
 
 [node name="VanillaFlavor" type="TextureButton" parent="FlavorButtons"]
 layout_mode = 0
-offset_left = 222.00003
-offset_top = 29.0
-offset_right = 251.00003
-offset_bottom = 57.0
+offset_left = -237.99997
+offset_top = -191.0
+offset_right = -208.99997
+offset_bottom = -163.0
 scale = Vector2(4.0371532, 4.1358485)
 texture_normal = SubResource("AtlasTexture_fmyjv")
 
 [node name="StrawberryFlavor" type="TextureButton" parent="FlavorButtons"]
 layout_mode = 0
-offset_left = 417.00006
-offset_top = 5.0
-offset_right = 439.00006
-offset_bottom = 30.0
+offset_left = -245.00012
+offset_top = -37.0
+offset_right = -223.00012
+offset_bottom = -12.0
 scale = Vector2(5.9252434, 5.364054)
 texture_normal = SubResource("AtlasTexture_v6onc")
+
+[node name="PipingButtons" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VanillaPiping" type="TextureButton" parent="PipingButtons"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 163.00002
+offset_right = 51.0
+offset_bottom = 222.00002
+rotation = -1.5866278
+scale = Vector2(4.2053056, 3.7843854)
+texture_normal = SubResource("AtlasTexture_oroy6")
+
+[node name="ChocolatePiping" type="TextureButton" parent="PipingButtons"]
+layout_mode = 0
+offset_left = 22.000002
+offset_top = 294.00003
+offset_right = 47.0
+offset_bottom = 356.00003
+rotation = -1.5957947
+scale = Vector2(4.4026284, 3.819398)
+texture_normal = SubResource("AtlasTexture_osclw")
+
+[node name="StrawberryPiping" type="TextureButton" parent="PipingButtons"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 426.99997
+offset_right = 45.0
+offset_bottom = 486.99997
+rotation = -1.6091914
+scale = Vector2(4.195514, 3.8074903)
+texture_normal = SubResource("AtlasTexture_wtpkm")
+
+[node name="UbePiping" type="TextureButton" parent="PipingButtons"]
+layout_mode = 0
+offset_left = 25.000002
+offset_top = 564.0
+offset_right = 48.0
+offset_bottom = 624.0
+rotation = -1.6500504
+scale = Vector2(4.216721, 3.748073)
+texture_normal = SubResource("AtlasTexture_2vn5o")
+
+[node name="ToppingButtons" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CandleButton" type="TextureButton" parent="ToppingButtons"]
+layout_mode = 0
+offset_left = 93.00001
+offset_top = 20.0
+offset_right = 108.00001
+offset_bottom = 48.0
+scale = Vector2(4.9859548, 4.2882886)
+texture_normal = SubResource("AtlasTexture_ogk1a")
+
+[node name="CherryButton" type="TextureButton" parent="ToppingButtons"]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 302.0
+offset_right = 97.0
+offset_bottom = 327.0
+scale = Vector2(5.492696, -5.435351)
+texture_normal = SubResource("AtlasTexture_v0hp2")
+flip_v = true
+
+[node name="SprinkleButton" type="TextureButton" parent="ToppingButtons"]
+layout_mode = 0
+offset_left = 80.00001
+offset_top = 339.0
+offset_right = 100.00001
+offset_bottom = 365.0
+scale = Vector2(4.931887, 4.6149106)
+texture_normal = SubResource("AtlasTexture_uiquw")
+
+[node name="ChocoSprinkleButton" type="TextureButton" parent="ToppingButtons"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 485.0
+offset_right = 102.0
+offset_bottom = 510.0
+scale = Vector2(4.846193, 4.326024)
+texture_normal = SubResource("AtlasTexture_l8k71")
+
+[node name="CakeFlavors" type="Node2D" parent="."]
+
+[node name="Choco" type="Node2D" parent="CakeFlavors"]
+
+[node name="ChocoCircle" type="Sprite2D" parent="CakeFlavors/Choco"]
+visible = false
+position = Vector2(539.5, 295.25)
+scale = Vector2(4.0781245, 4.016667)
+texture = SubResource("AtlasTexture_nnmf6")
+
+[node name="ChocoHeart" type="Sprite2D" parent="CakeFlavors/Choco"]
+visible = false
+position = Vector2(544.5, 287.25003)
+scale = Vector2(4.5286884, 4.8662796)
+texture = SubResource("AtlasTexture_jky5p")
+
+[node name="ChocoSquare" type="Sprite2D" parent="CakeFlavors/Choco"]
+visible = false
+position = Vector2(545.5, 292.25)
+scale = Vector2(4.013158, 4.3867927)
+texture = SubResource("AtlasTexture_aivwl")
+
+[node name="Vanilla" type="Node2D" parent="CakeFlavors"]
+position = Vector2(168, 139)
+
+[node name="VanillaCirc" type="Sprite2D" parent="CakeFlavors/Vanilla"]
+visible = false
+position = Vector2(374.5, 158.25002)
+scale = Vector2(4.09375, 4.152174)
+texture = SubResource("AtlasTexture_4onlm")
+
+[node name="VanillaHeart" type="Sprite2D" parent="CakeFlavors/Vanilla"]
+visible = false
+position = Vector2(378.99997, 153.625)
+scale = Vector2(4.649999, 5.0060973)
+texture = SubResource("AtlasTexture_bgtnn")
+
+[node name="VanillaSquare" type="Sprite2D" parent="CakeFlavors/Vanilla"]
+visible = false
+position = Vector2(376.625, 154)
+scale = Vector2(4.003333, 4.413461)
+texture = SubResource("AtlasTexture_3obes")
+
+[node name="Strawberry" type="Node2D" parent="CakeFlavors"]
+position = Vector2(526, 354)
+
+[node name="StrawberryCirc" type="Sprite2D" parent="CakeFlavors/Strawberry"]
+visible = false
+position = Vector2(435.5, 199.25)
+scale = Vector2(4.1153846, 4.1595745)
+texture = SubResource("AtlasTexture_uqlp7")
+
+[node name="StrawberryHeart" type="Sprite2D" parent="CakeFlavors/Strawberry"]
+visible = false
+position = Vector2(442.875, 200.25)
+scale = Vector2(4.6541667, 5.285714)
+texture = SubResource("AtlasTexture_0otc4")
+
+[node name="StrawberrySquare" type="Sprite2D" parent="CakeFlavors/Strawberry"]
+visible = false
+position = Vector2(440.5, 202.25)
+scale = Vector2(4.027027, 4.3846154)
+texture = SubResource("AtlasTexture_7dirc")
+
+[node name="CakeBase" type="Node2D" parent="."]
+visible = false
+
+[node name="Circle" type="Sprite2D" parent="CakeBase"]
+position = Vector2(585.25, 335.9375)
+scale = Vector2(4.085937, 4.307065)
+texture = SubResource("AtlasTexture_dw1lp")
+
+[node name="Heart" type="Sprite2D" parent="CakeBase"]
+visible = false
+position = Vector2(586, 327.06253)
+scale = Vector2(4.5806456, 4.9298787)
+texture = SubResource("AtlasTexture_xpngq")
+
+[node name="Square" type="Sprite2D" parent="CakeBase"]
+visible = false
+position = Vector2(587, 325.00003)
+scale = Vector2(3.9499996, 4.3774505)
+texture = SubResource("AtlasTexture_aaayk")
+
+[node name="CakeFrosting" type="Node2D" parent="."]
+
+[node name="Choco" type="Node2D" parent="CakeFrosting"]
+
+[node name="FrostingChocoCircle" type="Sprite2D" parent="CakeFrosting/Choco"]
+position = Vector2(542.125, 299.375)
+scale = Vector2(4.0884614, 4.2944446)
+texture = SubResource("AtlasTexture_uynn7")
+
+[node name="FrostingChocoHeart" type="Sprite2D" parent="CakeFrosting/Choco"]
+visible = false
+position = Vector2(549.5625, 287.81253)
+scale = Vector2(4.6372952, 5.125)
+texture = SubResource("AtlasTexture_3ux8u")
+
+[node name="FrostingChocoSquare" type="Sprite2D" parent="CakeFrosting/Choco"]
+visible = false
+position = Vector2(546.12506, 290.62497)
+scale = Vector2(4.049999, 4.353773)
+texture = SubResource("AtlasTexture_y3bl0")
+
+[node name="Strawberry" type="Node2D" parent="CakeFrosting"]
+
+[node name="FrostingStrawberryCircle" type="Sprite2D" parent="CakeFrosting/Strawberry"]
+visible = false
+position = Vector2(541.5, 297.625)
+scale = Vector2(4.1060605, 4.327778)
+texture = SubResource("AtlasTexture_4pqeh")
+
+[node name="FrostingStrawberryHeart" type="Sprite2D" parent="CakeFrosting/Strawberry"]
+visible = false
+position = Vector2(551, 287)
+scale = Vector2(4.8166666, 5.181818)
+texture = SubResource("AtlasTexture_ms13k")
+
+[node name="FrostingStrawberrySquare" type="Sprite2D" parent="CakeFrosting/Strawberry"]
+visible = false
+position = Vector2(548, 292)
+scale = Vector2(4.1486487, 4.5)
+texture = SubResource("AtlasTexture_uamdd")
+
+[node name="Vanilla" type="Node2D" parent="CakeFrosting"]
+
+[node name="FrostingVanillaCircle" type="Sprite2D" parent="CakeFrosting/Vanilla"]
+visible = false
+position = Vector2(540, 302)
+scale = Vector2(4.171875, 4.329546)
+texture = SubResource("AtlasTexture_24s8n")
+
+[node name="FrostingVanillaHeart" type="Sprite2D" parent="CakeFrosting/Vanilla"]
+visible = false
+position = Vector2(554, 289.00003)
+scale = Vector2(4.83871, 5.1704545)
+texture = SubResource("AtlasTexture_2f0fa")
+
+[node name="FrostingVanillaSquare" type="Sprite2D" parent="CakeFrosting/Vanilla"]
+visible = false
+position = Vector2(547.375, 294.25)
+scale = Vector2(4.1267123, 4.4903846)
+texture = SubResource("AtlasTexture_iu02i")
+
+[node name="Ube" type="Node2D" parent="CakeFrosting"]
+
+[node name="FrostingUbeCircle" type="Sprite2D" parent="CakeFrosting/Ube"]
+visible = false
+position = Vector2(542.00006, 301)
+scale = Vector2(4.1060605, 4.3555555)
+texture = SubResource("AtlasTexture_47svn")
+
+[node name="FrostingUbeHeart" type="Sprite2D" parent="CakeFrosting/Ube"]
+visible = false
+position = Vector2(551, 288)
+scale = Vector2(4.833332, 5.2727275)
+texture = SubResource("AtlasTexture_jtge3")
+
+[node name="FrostingUbeSquare" type="Sprite2D" parent="CakeFrosting/Ube"]
+visible = false
+position = Vector2(549.25, 291.75)
+scale = Vector2(4.1283784, 4.5096154)
+texture = SubResource("AtlasTexture_f4p7j")
+
+[node name="CakePiping" type="Node2D" parent="."]
+
+[node name="Circle" type="Node2D" parent="CakePiping"]
+
+[node name="CircleVanilla" type="Sprite2D" parent="CakePiping/Circle"]
+visible = false
+position = Vector2(542.00006, 304)
+scale = Vector2(4.15296, 4.435)
+texture = SubResource("AtlasTexture_skurs")
+
+[node name="CircleStrawberry" type="Sprite2D" parent="CakePiping/Circle"]
+visible = false
+position = Vector2(544, 307)
+scale = Vector2(4.095779, 4.4259267)
+texture = SubResource("AtlasTexture_csmww")
+
+[node name="CircleChocolate" type="Sprite2D" parent="CakePiping/Circle"]
+visible = false
+position = Vector2(545, 300)
+scale = Vector2(3.9920893, 4.502273)
+texture = SubResource("AtlasTexture_t5np4")
+
+[node name="CircleUbe" type="Sprite2D" parent="CakePiping/Circle"]
+position = Vector2(544, 298)
+scale = Vector2(3.9018986, 4.495098)
+texture = SubResource("AtlasTexture_f5od8")
+
+[node name="Heart" type="Node2D" parent="CakePiping"]
+
+[node name="HeartVanilla" type="Sprite2D" parent="CakePiping/Heart"]
+visible = false
+position = Vector2(550, 292)
+scale = Vector2(4.6071434, 5.15)
+texture = SubResource("AtlasTexture_3rgyf")
+
+[node name="HeartChocolate" type="Sprite2D" parent="CakePiping/Heart"]
+visible = false
+position = Vector2(540, 283)
+scale = Vector2(4.566176, 5.057598)
+texture = SubResource("AtlasTexture_niwhu")
+
+[node name="HeartStrawberry" type="Sprite2D" parent="CakePiping/Heart"]
+visible = false
+position = Vector2(550, 281)
+scale = Vector2(4.7242637, 4.7999997)
+texture = SubResource("AtlasTexture_8wwhu")
+
+[node name="HeartUbe" type="Sprite2D" parent="CakePiping/Heart"]
+visible = false
+position = Vector2(549.00006, 288.00003)
+scale = Vector2(4.5735292, 4.8599997)
+texture = SubResource("AtlasTexture_lntn0")
+
+[node name="Square" type="Node2D" parent="CakePiping"]
+visible = false
+
+[node name="SquareVanilla" type="Sprite2D" parent="CakePiping/Square"]
+visible = false
+position = Vector2(542, 287)
+scale = Vector2(4.0465107, 4.3551583)
+texture = SubResource("AtlasTexture_ruhtg")
+
+[node name="SquareChocolate" type="Sprite2D" parent="CakePiping/Square"]
+visible = false
+position = Vector2(546, 291)
+scale = Vector2(4.005953, 4.3299174)
+texture = SubResource("AtlasTexture_fdquw")
+
+[node name="SquareStrawberry" type="Sprite2D" parent="CakePiping/Square"]
+visible = false
+position = Vector2(549.00006, 285.25003)
+scale = Vector2(3.967647, 4.4083343)
+texture = SubResource("AtlasTexture_57dla")
+
+[node name="SquareUbe" type="Sprite2D" parent="CakePiping/Square"]
+position = Vector2(549.15625, 285.625)
+scale = Vector2(3.949265, 4.454167)
+texture = SubResource("AtlasTexture_0ga04")
+
+[node name="CakeTopping" type="Node2D" parent="."]
+
+[node name="Circle" type="Node2D" parent="CakeTopping"]
+
+[node name="CircleCandle" type="Sprite2D" parent="CakeTopping/Circle"]
+visible = false
+position = Vector2(539, 221)
+scale = Vector2(3.3863666, 3.0576913)
+texture = SubResource("AtlasTexture_sxbyc")
+
+[node name="CircleSprinkles" type="Sprite2D" parent="CakeTopping/Circle"]
+visible = false
+position = Vector2(547.43756, 253.12498)
+scale = Vector2(3.508803, 3.875)
+texture = SubResource("AtlasTexture_5mxqh")
+
+[node name="CircleDrizzle" type="Sprite2D" parent="CakeTopping/Circle"]
+visible = false
+position = Vector2(537, 271.87503)
+scale = Vector2(4.0895534, 4.371622)
+texture = SubResource("AtlasTexture_qxrq1")
+
+[node name="CircleCherry" type="Sprite2D" parent="CakeTopping/Circle"]
+position = Vector2(542, 217)
+scale = Vector2(3.5858207, 4.511904)
+texture = SubResource("AtlasTexture_c2y5k")
+
+[node name="Heart" type="Node2D" parent="CakeTopping"]
+visible = false
+
+[node name="HeartCandle" type="Sprite2D" parent="CakeTopping/Heart"]
+visible = false
+position = Vector2(552.875, 223.125)
+scale = Vector2(4.975, 4.265624)
+texture = SubResource("AtlasTexture_8w7j1")
+
+[node name="HeartSprinkles" type="Sprite2D" parent="CakeTopping/Heart"]
+visible = false
+position = Vector2(554.125, 238.37502)
+scale = Vector2(4.4364405, 4.219697)
+texture = SubResource("AtlasTexture_673hs")
+
+[node name="HeartDrizzle" type="Sprite2D" parent="CakeTopping/Heart"]
+visible = false
+position = Vector2(550, 258)
+scale = Vector2(4.625, 4.9455113)
+texture = SubResource("AtlasTexture_25dvd")
+
+[node name="HeartCherry" type="Sprite2D" parent="CakeTopping/Heart"]
+visible = false
+position = Vector2(553, 221)
+scale = Vector2(4.651786, 4.596154)
+texture = SubResource("AtlasTexture_vo6xi")
+
+[node name="Square" type="Node2D" parent="CakeTopping"]
+
+[node name="SquareCandle" type="Sprite2D" parent="CakeTopping/Square"]
+visible = false
+position = Vector2(539.00006, 187)
+scale = Vector2(2.7727273, 4.1842103)
+texture = SubResource("AtlasTexture_k7ig5")
+
+[node name="SquareSprinkles" type="Sprite2D" parent="CakeTopping/Square"]
+visible = false
+position = Vector2(547, 224)
+scale = Vector2(3.999999, 3.611111)
+texture = SubResource("AtlasTexture_yxge0")
+
+[node name="SquareDrizzle" type="Sprite2D" parent="CakeTopping/Square"]
+visible = false
+position = Vector2(544.875, 246.49998)
+scale = Vector2(4.053797, 4.9749994)
+texture = SubResource("AtlasTexture_sic46")
+
+[node name="SquareCherry" type="Sprite2D" parent="CakeTopping/Square"]
+visible = false
+position = Vector2(545, 192)
+scale = Vector2(4.0064936, 4.207317)
+texture = SubResource("AtlasTexture_0v5gj")
 
 [connection signal="pressed" from="Display/NextButton" to="." method="_on_next_button_pressed"]

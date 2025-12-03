@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y1vt87j8suun"
-path="res://.godot/imported/CakePipingUbe.png-85c5d638b09cf2283de173cd80bf498e.ctex"
+uid="uid://b88cyc3tay4hg"
+path="res://.godot/imported/GameBackground.png-779d88dfcda3735653076982d4c476a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/IcingPiping/CakePipingUbe.png"
-dest_files=["res://.godot/imported/CakePipingUbe.png-85c5d638b09cf2283de173cd80bf498e.ctex"]
+source_file="res://Assets/Sprites/MainGame/GameBackground.png"
+dest_files=["res://.godot/imported/GameBackground.png-779d88dfcda3735653076982d4c476a0.ctex"]
 
 [params]
 
