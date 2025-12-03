@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dl6vpww08jjtc" path="res://Assets/Sprites/Background/base_background.png" id="1_8vrdj"]
 [ext_resource type="Script" uid="uid://co3l2isd8fm5i" path="res://GameScenes/DecoratingScene/DecoratingScene.gd" id="1_607do"]
-[ext_resource type="Texture2D" uid="uid://4gapib7to7re" path="res://GameScenes/MainGame/flavor_button.png" id="3_afxeg"]
+[ext_resource type="Texture2D" uid="uid://4gapib7to7re" path="res://Assets/Sprites/Buttons/flavor_button.png" id="3_afxeg"]
 [ext_resource type="Texture2D" uid="uid://dqgeqsnd4qcui" path="res://Assets/Sprites/Buttons/chef_not_hover.png" id="4_8w56w"]
 [ext_resource type="Texture2D" uid="uid://u8f6tedn5ql" path="res://Assets/Sprites/Buttons/chef_hovered.png" id="5_8lgoi"]
 

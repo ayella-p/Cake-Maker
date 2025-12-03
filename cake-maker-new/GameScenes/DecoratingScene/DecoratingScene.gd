@@ -10,18 +10,29 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
+func _on_select_toppings(name):
+	if Global.cake_stack.has(name):
+		Global.cake_stack.erase(name)
+		print("Removed: ", name, " | Stack: ", Global.cake_stack)
+		
+	if Global.cake_stack.size() >= 4:
+		Global.pop()
+	
+	Global.push(name)
 func _on_toppings_1_pressed() -> void:
-	print("Sprinkles")
+	_on_select_toppings("sprinkles")
 
 func _on_topping_2_pressed() -> void:
-	print("Frosting")
+	
+	_on_select_toppings("cherry")
 
 func _on_topping_3_pressed() -> void:
-	print("Cherry")
+
+	_on_select_toppings("choco sprinkles")
 
 func _on_topping_4_pressed() -> void:
-	print("Drizzle")
+	
+	_on_select_toppings("m&ms")
 
 
 func _on_next_button_pressed() -> void:
