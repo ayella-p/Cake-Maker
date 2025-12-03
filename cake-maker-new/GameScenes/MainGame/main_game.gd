@@ -5,9 +5,15 @@ extends Node2D
 @onready var oven_buttons = $OvenButtons 
 @onready var flavor_buttons = $FlavorButtons
 
-@onready var circle_btn = $OvenButtons/CircleButton
-@onready var square_btn = $OvenButtons/SquareButton
-@onready var heart_btn = $OvenButtons/HeartButton
+@onready var circle_button: TextureButton = $OvenButtons/CircleButton
+@onready var square_button: TextureButton = $OvenButtons/SquareButton
+@onready var heart_button: TextureButton = $OvenButtons/HeartButton
+
+@onready var chocolate_flavor: TextureButton = $FlavorButtons/ChocolateFlavor
+@onready var vanilla_flavor: TextureButton = $FlavorButtons/VanillaFlavor
+@onready var strawberry_flavor: TextureButton = $FlavorButtons/StrawberryFlavor
+
+
 @onready var next_btn = $Display/NextButton 
 @onready var table_cake = $TableCake 
 
@@ -32,13 +38,13 @@ func _ready():
 	flavor_buttons.visible = false 
 	next_btn.visible = false
 	
-	circle_btn.pressed.connect(_on_circle_clicked)
-	square_btn.pressed.connect(_on_square_clicked)
-	heart_btn.pressed.connect(_on_heart_clicked)
+	circle_button.pressed.connect(_on_circle_clicked)
+	square_button.pressed.connect(_on_square_clicked)
+	heart_button.pressed.connect(_on_heart_clicked)
 	
-	$FlavorButtons/VanillaButton.pressed.connect(_on_vanilla_clicked)
-	$FlavorButtons/ChocoButton.pressed.connect(_on_choco_clicked)
-	$FlavorButtons/RedButton.pressed.connect(_on_berry_clicked)
+	vanilla_flavor.pressed.connect(_on_vanilla_clicked)
+	chocolate_flavor.pressed.connect(_on_choco_clicked)
+	strawberry_flavor.pressed.connect(_on_berry_clicked)
 	
 	#connect button
 	next_btn.pressed.connect(_on_next_pressed)
@@ -104,4 +110,4 @@ func _on_next_pressed():
 		
 	elif phase == 1:
 		print("Current Stack: ", Global.cake_stack)
-		get_tree().change_scene_to_file("res://GameScenes/DecoratingScene/DecoratingScene.tscn")
+		get_tree().change_scene_to_file("res://GameScenes/Filling_PipingScene/FillingPipingScene.tscn")

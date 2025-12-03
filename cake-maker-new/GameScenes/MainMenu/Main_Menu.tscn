@@ -65,15 +65,15 @@ texture = SubResource("AtlasTexture_8jg3k")
 position = Vector2(744.25, 196)
 texture = SubResource("AtlasTexture_kmc10")
 
-[node name="CakeSpriteHover" type="Sprite2D" parent="BackgroundImage"]
-position = Vector2(684, 537)
-scale = Vector2(0.51899993, 0.46400005)
-texture = ExtResource("5_kmc10")
-
 [node name="CakeSprite" type="Sprite2D" parent="BackgroundImage"]
-position = Vector2(888.25, 501.5)
+position = Vector2(647, 526)
 scale = Vector2(0.7969998, 0.70199996)
 texture = ExtResource("4_8jg3k")
+
+[node name="CakeSpriteHover" type="Sprite2D" parent="."]
+position = Vector2(1013, 478)
+scale = Vector2(1.149875, 1.0179999)
+texture = ExtResource("5_kmc10")
 
 [node name="Buttons_Main" type="Control" parent="."]
 layout_mode = 3

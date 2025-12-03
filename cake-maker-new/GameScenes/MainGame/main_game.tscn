@@ -1,14 +1,36 @@
-[gd_scene load_steps=10 format=3 uid="uid://fgll768xba3f"]
+[gd_scene load_steps=14 format=3 uid="uid://fgll768xba3f"]
 
 [ext_resource type="Script" uid="uid://djy7wqlb1qlbb" path="res://GameScenes/MainGame/main_game.gd" id="1_m7vas"]
 [ext_resource type="Texture2D" uid="uid://dl6vpww08jjtc" path="res://Assets/Sprites/Background/base_background.png" id="2_v0bl5"]
 [ext_resource type="PackedScene" uid="uid://cfr74c251srni" path="res://GameScenes/MainGame/order.tscn" id="3_ban2i"]
-[ext_resource type="Texture2D" uid="uid://16xdc6ej0gf4" path="res://Assets/Sprites/Icon/circle_cake.png" id="4_ban2i"]
-[ext_resource type="Texture2D" uid="uid://br8mqsb6rxmuc" path="res://Assets/Sprites/Icon/heart_cake.png" id="6_wu7nr"]
-[ext_resource type="Texture2D" uid="uid://bfynbqpord4i7" path="res://Assets/Sprites/Icon/square.png" id="7_ii3au"]
+[ext_resource type="Texture2D" uid="uid://8bv8df3w0njs" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeBases.png" id="6_shrk5"]
+[ext_resource type="Texture2D" uid="uid://b3qtohdxol312" path="res://Assets/Sprites/IcingPiping/CakeButtons.png" id="7_shrk5"]
 [ext_resource type="Texture2D" uid="uid://dqgeqsnd4qcui" path="res://Assets/Sprites/Buttons/chef_not_hover.png" id="7_wu7nr"]
 [ext_resource type="Texture2D" uid="uid://u8f6tedn5ql" path="res://Assets/Sprites/Buttons/chef_hovered.png" id="8_ii3au"]
-[ext_resource type="Texture2D" uid="uid://4gapib7to7re" path="res://GameScenes/MainGame/flavor_button.png" id="9_ii3au"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wu7nr"]
+atlas = ExtResource("6_shrk5")
+region = Rect2(67.822235, 2.6483102, 56.900772, 56.737263)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ii3au"]
+atlas = ExtResource("6_shrk5")
+region = Rect2(1.0722885, 69.54932, 62.146156, 55.036224)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qi62"]
+atlas = ExtResource("6_shrk5")
+region = Rect2(195.81567, 8.983397, 56.09259, 46.92083)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fi2i"]
+atlas = ExtResource("7_shrk5")
+region = Rect2(13.718201, 78.80823, 35.549713, 35.286377)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmyjv"]
+atlas = ExtResource("7_shrk5")
+region = Rect2(64.67443, 82.23154, 29.22976, 28.439774)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6onc"]
+atlas = ExtResource("7_shrk5")
+region = Rect2(69.15106, 113.56795, 22.383148, 25.806458)
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_m7vas")
@@ -35,6 +57,7 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="Order" parent="." instance=ExtResource("3_ban2i")]
+visible = false
 
 [node name="Display" type="CanvasLayer" parent="."]
 
@@ -48,52 +71,73 @@ texture_hover = ExtResource("8_ii3au")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="OvenButtons" type="Node2D" parent="."]
+[node name="OvenButtons" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="CircleButton" type="TextureButton" parent="OvenButtons"]
-offset_left = 109.0
-offset_top = 141.0
-offset_right = 266.0
-offset_bottom = 302.0
-texture_normal = ExtResource("4_ban2i")
+layout_mode = 0
+offset_left = 34.0
+offset_top = 22.0
+offset_right = 224.0
+offset_bottom = 215.0
+texture_normal = SubResource("AtlasTexture_wu7nr")
 ignore_texture_size = true
 stretch_mode = 5
 
 [node name="SquareButton" type="TextureButton" parent="OvenButtons"]
-offset_left = 94.0
-offset_top = 368.0
-offset_right = 286.0
-offset_bottom = 521.0
-texture_normal = ExtResource("7_ii3au")
+layout_mode = 0
+offset_left = 39.0
+offset_top = 453.0
+offset_right = 231.0
+offset_bottom = 606.0
+texture_normal = SubResource("AtlasTexture_ii3au")
 ignore_texture_size = true
 stretch_mode = 5
 
 [node name="HeartButton" type="TextureButton" parent="OvenButtons"]
-offset_left = -4.0
-offset_top = 273.0
-offset_right = 162.0
-offset_bottom = 434.0
-texture_normal = ExtResource("6_wu7nr")
+layout_mode = 0
+offset_left = 33.0
+offset_top = 256.0
+offset_right = 225.0
+offset_bottom = 420.0
+texture_normal = SubResource("AtlasTexture_5qi62")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="FlavorButtons" type="HBoxContainer" parent="."]
-offset_left = 185.0
-offset_top = 536.0
-offset_right = 998.0
-offset_bottom = 728.0
-alignment = 1
+[node name="FlavorButtons" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 307.0
+offset_top = 449.0
+offset_right = 871.0
+offset_bottom = 609.0
 
-[node name="VanillaButton" type="TextureButton" parent="FlavorButtons"]
-layout_mode = 2
-texture_normal = ExtResource("9_ii3au")
-stretch_mode = 4
+[node name="ChocolateFlavor" type="TextureButton" parent="FlavorButtons"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 20.00003
+offset_right = 48.0
+offset_bottom = 55.00003
+scale = Vector2(3.8729217, 3.6942573)
+texture_normal = SubResource("AtlasTexture_1fi2i")
 
-[node name="ChocoButton" type="TextureButton" parent="FlavorButtons"]
-layout_mode = 2
-texture_normal = ExtResource("9_ii3au")
-stretch_mode = 4
+[node name="VanillaFlavor" type="TextureButton" parent="FlavorButtons"]
+layout_mode = 0
+offset_left = 222.00003
+offset_top = 29.0
+offset_right = 251.00003
+offset_bottom = 57.0
+scale = Vector2(4.0371532, 4.1358485)
+texture_normal = SubResource("AtlasTexture_fmyjv")
 
-[node name="RedButton" type="TextureButton" parent="FlavorButtons"]
-layout_mode = 2
-texture_normal = ExtResource("9_ii3au")
+[node name="StrawberryFlavor" type="TextureButton" parent="FlavorButtons"]
+layout_mode = 0
+offset_left = 417.00006
+offset_top = 5.0
+offset_right = 439.00006
+offset_bottom = 30.0
+scale = Vector2(5.9252434, 5.364054)
+texture_normal = SubResource("AtlasTexture_v6onc")
+
+[connection signal="pressed" from="Display/NextButton" to="." method="_on_next_button_pressed"]
