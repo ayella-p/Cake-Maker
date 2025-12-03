@@ -9,13 +9,17 @@ var character = "";
 
 #push item
 func push(item_name):
-	cake_stack.push_back(item_name)
+	var currentsize = cake_stack.size()
+	cake_stack.resize(currentsize + 1)
+	cake_stack[currentsize] = item_name
 	print("PUSHED:", item_name, " | Stack:", cake_stack)
 
 #pop item
 func pop():
-	if not cake_stack.is_empty():
-		var removed = cake_stack.pop_back()
+	if not cake_stack.size() == 0:
+		var top = cake_stack.size() - 1
+		var removed = cake_stack[top]
+		cake_stack.resize(top);
 		print("POPPED:", removed, " | Stack:", cake_stack)
 		return removed
 	else:
