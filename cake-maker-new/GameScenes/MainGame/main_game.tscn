@@ -1,16 +1,18 @@
-[gd_scene load_steps=87 format=3 uid="uid://fgll768xba3f"]
+[gd_scene load_steps=93 format=3 uid="uid://fgll768xba3f"]
 
 [ext_resource type="Script" uid="uid://djy7wqlb1qlbb" path="res://GameScenes/MainGame/main_game.gd" id="1_m7vas"]
 [ext_resource type="Texture2D" uid="uid://b88cyc3tay4hg" path="res://Assets/Sprites/MainGame/GameBackground.png" id="2_xpngq"]
 [ext_resource type="PackedScene" uid="uid://cfr74c251srni" path="res://GameScenes/MainGame/order.tscn" id="3_ban2i"]
 [ext_resource type="Texture2D" uid="uid://3groew7n7mhl" path="res://Assets/Sprites/MainGame/LeftPanel.png" id="6_aaayk"]
 [ext_resource type="Texture2D" uid="uid://8bv8df3w0njs" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeBases.png" id="6_shrk5"]
+[ext_resource type="Texture2D" uid="uid://bxg50o7tjucj3" path="res://Assets/Sprites/Texts/WhoRu.png" id="7_aaayk"]
 [ext_resource type="Texture2D" uid="uid://dqgeqsnd4qcui" path="res://Assets/Sprites/Buttons/chef_not_hover.png" id="7_wu7nr"]
 [ext_resource type="Texture2D" uid="uid://tv6kcx17bmop" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorChocolate.png" id="8_5qi62"]
 [ext_resource type="Texture2D" uid="uid://u8f6tedn5ql" path="res://Assets/Sprites/Buttons/chef_hovered.png" id="8_ii3au"]
 [ext_resource type="Texture2D" uid="uid://dodx0ddff2xm2" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorVanilla.png" id="9_1fi2i"]
 [ext_resource type="Texture2D" uid="uid://b3qtohdxol312" path="res://Assets/Sprites/MainGame/CakeButtons.png" id="9_vso7p"]
 [ext_resource type="Texture2D" uid="uid://du16sgt4a1rqt" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorStrawberry.png" id="10_fmyjv"]
+[ext_resource type="Texture2D" uid="uid://bi51u46cldl7q" path="res://Assets/Sprites/Texts/Toppings.png" id="10_vso7p"]
 [ext_resource type="Texture2D" uid="uid://bscr8ouv5k4rs" path="res://Assets/Sprites/MainGame/Frosting/CakeFrostingChocolate.png" id="13_g2twb"]
 [ext_resource type="Texture2D" uid="uid://cb806gm8w47cu" path="res://Assets/Sprites/MainGame/Frosting/CakeFrostingStrawberry.png" id="14_yqmiu"]
 [ext_resource type="Texture2D" uid="uid://ciqgki1atmpfr" path="res://Assets/Sprites/MainGame/Frosting/CakeFrostingVanilla.png" id="15_hhw2o"]
@@ -28,6 +30,10 @@
 atlas = ExtResource("6_aaayk")
 region = Rect2(0, 0, 231.79617, 648)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2twb"]
+atlas = ExtResource("7_aaayk")
+region = Rect2(14, 151.5, 342, 150)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_wu7nr"]
 atlas = ExtResource("6_shrk5")
 region = Rect2(67.822235, 2.6483102, 56.900772, 56.737263)
@@ -41,13 +47,24 @@ atlas = ExtResource("6_shrk5")
 region = Rect2(195.81567, 8.983397, 56.09259, 46.92083)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1fi2i"]
+atlas = ExtResource("9_vso7p")
 region = Rect2(13.718201, 78.80823, 35.549713, 35.286377)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fmyjv"]
+atlas = ExtResource("9_vso7p")
 region = Rect2(64.67443, 82.23154, 29.22976, 28.439774)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v6onc"]
+atlas = ExtResource("9_vso7p")
 region = Rect2(69.15106, 113.56795, 22.383148, 25.806458)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqmiu"]
+atlas = ExtResource("10_vso7p")
+region = Rect2(30.449944, 19.484993, 498.52002, 156.09)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhw2o"]
+atlas = ExtResource("7_aaayk")
+region = Rect2(115, 299.5, 510, 152)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oroy6"]
 atlas = ExtResource("9_vso7p")
@@ -80,6 +97,10 @@ region = Rect2(133.2148, 115.0264, 20.661453, 26.012634)
 [sub_resource type="AtlasTexture" id="AtlasTexture_l8k71"]
 atlas = ExtResource("9_vso7p")
 region = Rect2(165.64798, 115.65084, 19.175018, 25.86399)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mn67t"]
+atlas = ExtResource("10_vso7p")
+region = Rect2(17.139946, 193.725, 552.97003, 147.62)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nnmf6"]
 atlas = ExtResource("8_5qi62")
@@ -320,8 +341,13 @@ scale = Vector2(1.2363762, 1)
 texture = SubResource("AtlasTexture_tbacp")
 
 [node name="OvenButtons" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 0
+
+[node name="Bases" type="Sprite2D" parent="OvenButtons"]
+position = Vector2(569, 66)
+texture = SubResource("AtlasTexture_g2twb")
 
 [node name="CircleButton" type="TextureButton" parent="OvenButtons"]
 layout_mode = 0
@@ -389,12 +415,20 @@ offset_bottom = -12.0
 scale = Vector2(5.9252434, 5.364054)
 texture_normal = SubResource("AtlasTexture_v6onc")
 
+[node name="FlavorLabel" type="Sprite2D" parent="FlavorButtons"]
+position = Vector2(260, -374)
+texture = SubResource("AtlasTexture_yqmiu")
+
 [node name="PipingButtons" type="Control" parent="."]
 visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="PipingLabel" type="Sprite2D" parent="PipingButtons"]
+position = Vector2(579, 71)
+texture = SubResource("AtlasTexture_hhw2o")
 
 [node name="VanillaPiping" type="TextureButton" parent="PipingButtons"]
 layout_mode = 0
@@ -437,7 +471,6 @@ scale = Vector2(4.216721, 3.748073)
 texture_normal = SubResource("AtlasTexture_2vn5o")
 
 [node name="ToppingButtons" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -479,6 +512,10 @@ offset_right = 102.0
 offset_bottom = 510.0
 scale = Vector2(4.846193, 4.326024)
 texture_normal = SubResource("AtlasTexture_l8k71")
+
+[node name="ToppingLabel" type="Sprite2D" parent="ToppingButtons"]
+position = Vector2(564, 71)
+texture = SubResource("AtlasTexture_mn67t")
 
 [node name="CakeFlavors" type="Node2D" parent="."]
 visible = false
