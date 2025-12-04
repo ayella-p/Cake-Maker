@@ -11,6 +11,10 @@ extends Node2D
 @onready var visual_piping = $CakePiping
 @onready var visual_topping = $CakeTopping
 
+@onready var order_1: Sprite2D = $Orders/Order1
+@onready var order_2: Sprite2D = $Orders/Order2
+@onready var order_3: Sprite2D = $Orders/Order3
+
 var phase = 0  #state
 var selected_shape = ""    
 var selected_flavor = ""   
@@ -20,6 +24,19 @@ var selected_topping = ""
 func _ready():
 	if Global.current_level == 1:
 		Global.start_level(1)
+	
+	if Global.current_level == 1:
+		order_1.visible = true
+		
+	elif Global.current_level == 2:
+		order_2.visible = true
+		
+	elif Global.current_level == 3:
+		order_3.visible = true;
+		
+	elif  Global.current_level == 4:
+		get_tree().change_scene_to_file("res://GameScenes/MainMenu/Main_Menu.tscn")
+		
 	_reset_game()
 	_connect_signals()
 
@@ -70,6 +87,7 @@ func _connect_signals():
 #phase 0
 func _on_shape_selected(shape_name):
 	selected_shape = shape_name
+	SFX.Press()
 	
 	if not Global.cake_stack.is_empty(): Global.pop()
 	Global.push(shape_name.to_lower() + "_base")
@@ -89,10 +107,12 @@ func _on_shape_selected(shape_name):
 
 #phase 1
 func _on_flavor_selected(flavor_name):
+	
 	selected_flavor = flavor_name
 	if Global.cake_stack.size() > 1:
 		Global.pop()
 	Global.push(flavor_name)
+	SFX.Press()
 	
 	_hide_all_children(visual_frosting)
 	
@@ -110,6 +130,8 @@ func _on_flavor_selected(flavor_name):
 
 #phase 2 piping
 func _on_piping_selected(piping_type):
+	SFX.Press()
+	
 	if Global.cake_stack.size() > 2:
 		Global.pop()
 	Global.push(piping_type)
@@ -130,6 +152,7 @@ func _on_piping_selected(piping_type):
 
 #phase 3 topping
 func _on_topping_selected(topping_type):
+	SFX.Press()
 	
 	if Global.cake_stack.size() > 3:
 		Global.pop()
@@ -151,6 +174,7 @@ func _on_topping_selected(topping_type):
 #game flow
 func _on_next_pressed():
 	next_btn.visible = false 
+	SFX.Press()
 	
 	if phase == 0:
 		oven_buttons.visible = false
@@ -158,6 +182,10 @@ func _on_next_pressed():
 		phase = 1
 		
 	elif phase == 1:
+		order_1.visible = false
+		order_2.visible = false
+		order_3.visible = false
+		
 		flavor_buttons.visible = false
 		piping_buttons.visible = true
 		phase = 2

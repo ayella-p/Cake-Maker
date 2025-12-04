@@ -33,17 +33,17 @@ var level_data = {
 		# array we want to build
 		"target_stack": ["heart_base", "Strawberry", "Vanilla", "Cherry"]
 ,
-		"order_form_img": preload("res://Assets/Sprites/OrderForm/first_order.jpg") 
+		"order_form_img": preload("res://Assets/Sprites/Orders/Order1.png") 
 	},
 	2: {
 		"customer": "John",
 		"target_stack": ["circle_base", "Choco", "Strawberry", "Sprinkles"],
-		"order_form_img": preload("res://Assets/Sprites/OrderForm/first_order.jpg")
+		"order_form_img": preload("res://Assets/Sprites/Orders/Order2.png")
 	},
 	3: {
 		"customer": "Sarah",
 		"target_stack": ["square_base", "Vanilla", "Ube", "Drizzle"], 
-		"order_form_img": preload("res://Assets/Sprites/OrderForm/first_order.jpg")
+		"order_form_img": preload("res://Assets/Sprites/Orders/Order3.png")
 	}
 }
 func start_level(level_num):

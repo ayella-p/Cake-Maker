@@ -7,9 +7,6 @@ var button_type = null
 func _ready() -> void:
 	MusicPlayer.playMusic()
 
-func pressButton() -> void:
-	SFX.Press()
-
 func _on_start_pressed() -> void:
 	button_type = "start"
 	print("Start")

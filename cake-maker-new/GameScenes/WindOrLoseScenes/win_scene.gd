@@ -13,6 +13,9 @@ func _on_next_level(level):
 	Global.start_level(level)
 	if(level < 4):
 		get_tree().change_scene_to_file("res://GameScenes/MainGame/main_game.tscn")
+	
+	if(level == 4):
+		get_tree().change_scene_to_file("res://GameScenes/MainMenu/Main_Menu.tscn")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

@@ -1,14 +1,13 @@
-[gd_scene load_steps=93 format=3 uid="uid://fgll768xba3f"]
+[gd_scene load_steps=97 format=3 uid="uid://fgll768xba3f"]
 
 [ext_resource type="Script" uid="uid://djy7wqlb1qlbb" path="res://GameScenes/MainGame/main_game.gd" id="1_m7vas"]
 [ext_resource type="Texture2D" uid="uid://b88cyc3tay4hg" path="res://Assets/Sprites/MainGame/GameBackground.png" id="2_xpngq"]
 [ext_resource type="PackedScene" uid="uid://cfr74c251srni" path="res://GameScenes/MainGame/Orders/order.tscn" id="3_ban2i"]
+[ext_resource type="Texture2D" uid="uid://o5v8fxs86v7v" path="res://Assets/Sprites/MainGame/NextButton.png" id="4_xpngq"]
 [ext_resource type="Texture2D" uid="uid://3groew7n7mhl" path="res://Assets/Sprites/MainGame/LeftPanel.png" id="6_aaayk"]
 [ext_resource type="Texture2D" uid="uid://8bv8df3w0njs" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeBases.png" id="6_shrk5"]
 [ext_resource type="Texture2D" uid="uid://bxg50o7tjucj3" path="res://Assets/Sprites/Texts/WhoRu.png" id="7_aaayk"]
-[ext_resource type="Texture2D" uid="uid://dqgeqsnd4qcui" path="res://Assets/Sprites/Buttons/chef_not_hover.png" id="7_wu7nr"]
 [ext_resource type="Texture2D" uid="uid://tv6kcx17bmop" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorChocolate.png" id="8_5qi62"]
-[ext_resource type="Texture2D" uid="uid://u8f6tedn5ql" path="res://Assets/Sprites/Buttons/chef_hovered.png" id="8_ii3au"]
 [ext_resource type="Texture2D" uid="uid://dodx0ddff2xm2" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorVanilla.png" id="9_1fi2i"]
 [ext_resource type="Texture2D" uid="uid://b3qtohdxol312" path="res://Assets/Sprites/MainGame/CakeButtons.png" id="9_vso7p"]
 [ext_resource type="Texture2D" uid="uid://du16sgt4a1rqt" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeFlavorStrawberry.png" id="10_fmyjv"]
@@ -25,7 +24,17 @@
 [ext_resource type="Texture2D" uid="uid://bnb5efk6kehov" path="res://Assets/Sprites/MainGame/Toppings/CakeToppingSprinkles.png" id="22_da5ad"]
 [ext_resource type="Texture2D" uid="uid://ex6k3soox0ub" path="res://Assets/Sprites/MainGame/Toppings/CakeToppingsChocoDrizzle.png" id="23_6nej8"]
 [ext_resource type="Texture2D" uid="uid://bpgm5e1rdtw46" path="res://Assets/Sprites/MainGame/Toppings/CakeToppingsCherry.png" id="24_ijeb3"]
+[ext_resource type="Texture2D" uid="uid://bm4fr6gvpgejr" path="res://Assets/Sprites/Orders/Order1.png" id="25_g2twb"]
+[ext_resource type="Texture2D" uid="uid://bv4koy1j2ltw5" path="res://Assets/Sprites/Orders/Order2.png" id="26_yqmiu"]
+[ext_resource type="Texture2D" uid="uid://bvmnwk20sjrnq" path="res://Assets/Sprites/Orders/Order3.png" id="27_hhw2o"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_vso7p"]
+atlas = ExtResource("4_xpngq")
+region = Rect2(319.6745, 94.364555, 63.916748, 31.958366)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3icxt"]
+atlas = ExtResource("4_xpngq")
+region = Rect2(385.47324, 95.04183, 63.322174, 30.769218)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tbacp"]
 atlas = ExtResource("6_aaayk")
@@ -327,12 +336,12 @@ visible = false
 
 [node name="NextButton" type="TextureButton" parent="Display"]
 visible = false
-offset_left = 856.0
-offset_top = 256.0
-offset_right = 1120.0
-offset_bottom = 399.0
-texture_normal = ExtResource("7_wu7nr")
-texture_hover = ExtResource("8_ii3au")
+offset_left = 858.0
+offset_top = 396.0
+offset_right = 1122.0
+offset_bottom = 539.0
+texture_normal = SubResource("AtlasTexture_vso7p")
+texture_hover = SubResource("AtlasTexture_3icxt")
 ignore_texture_size = true
 stretch_mode = 5
 
@@ -847,5 +856,24 @@ texture = SubResource("AtlasTexture_sic46")
 position = Vector2(557, 204)
 scale = Vector2(3.747056, 4.434707)
 texture = SubResource("AtlasTexture_0v5gj")
+
+[node name="Orders" type="Node2D" parent="."]
+
+[node name="Order1" type="Sprite2D" parent="Orders"]
+position = Vector2(982.25006, 172)
+scale = Vector2(0.3918751, 0.41500002)
+texture = ExtResource("25_g2twb")
+
+[node name="Order2" type="Sprite2D" parent="Orders"]
+visible = false
+position = Vector2(977.75, 173.125)
+scale = Vector2(0.39812505, 0.40968752)
+texture = ExtResource("26_yqmiu")
+
+[node name="Order3" type="Sprite2D" parent="Orders"]
+visible = false
+position = Vector2(980.37494, 173.375)
+scale = Vector2(0.4015624, 0.4140625)
+texture = ExtResource("27_hhw2o")
 
 [connection signal="pressed" from="Display/NextButton" to="." method="_on_next_button_pressed"]
