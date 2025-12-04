@@ -1,0 +1,69 @@
+[gd_scene load_steps=13 format=3 uid="uid://b1ecoex0jcq6j"]
+
+[ext_resource type="Texture2D" uid="uid://03qxkn2ppavp" path="res://Assets/Sprites/MainMenu/BackgroundCake.png" id="1_ni5ic"]
+[ext_resource type="Texture2D" uid="uid://d3b56chybvky0" path="res://Assets/Sprites/WinOrLose/CircleYellow.png" id="2_af3jr"]
+[ext_resource type="Texture2D" uid="uid://dtx7aa8wwd3uy" path="res://Assets/Sprites/WinOrLose/CakeHappy.png" id="3_r1ld0"]
+[ext_resource type="Texture2D" uid="uid://dfqvitykwg074" path="res://Assets/Sprites/WinOrLose/WinOrLose.png" id="4_8qvbm"]
+[ext_resource type="Texture2D" uid="uid://dlxpifk13pblx" path="res://Assets/Sprites/WinOrLose/MenuButton.png" id="5_t3w00"]
+[ext_resource type="Texture2D" uid="uid://c6670fuvsc1fh" path="res://Assets/Sprites/WinOrLose/RetryButton.png" id="6_a1wfq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rb1up"]
+atlas = ExtResource("3_r1ld0")
+region = Rect2(91.097015, 6.5065155, 87.051636, 69.83916)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4p7n"]
+atlas = ExtResource("4_8qvbm")
+region = Rect2(23.416878, 157.45494, 743.6367, 131.81825)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxfa5"]
+atlas = ExtResource("5_t3w00")
+region = Rect2(333.2588, 93.863625, 64.30548, 32.469536)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibc1s"]
+atlas = ExtResource("5_t3w00")
+region = Rect2(399.84396, 94.27637, 64.92905, 32.01487)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwuko"]
+atlas = ExtResource("6_a1wfq")
+region = Rect2(351.7356, 78.97034, 63.90384, 32.64438)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ht47e"]
+atlas = ExtResource("6_a1wfq")
+region = Rect2(417.0956, 78.97081, 64.893036, 33.83145)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BackgroundCake" type="Sprite2D" parent="."]
+position = Vector2(578, 327)
+texture = ExtResource("1_ni5ic")
+
+[node name="CircleYellow" type="Sprite2D" parent="."]
+position = Vector2(592, 338)
+texture = ExtResource("2_af3jr")
+
+[node name="CakeHappy" type="Sprite2D" parent="."]
+position = Vector2(566, 274.00003)
+scale = Vector2(4.6422415, 4.8242745)
+texture = SubResource("AtlasTexture_rb1up")
+
+[node name="WinOrLose" type="Sprite2D" parent="."]
+position = Vector2(594, 124)
+texture = SubResource("AtlasTexture_l4p7n")
+
+[node name="MenuButton" type="TextureButton" parent="."]
+offset_left = 327.0
+offset_top = 466.99997
+offset_right = 391.0
+offset_bottom = 498.99997
+scale = Vector2(3.7778277, 4.004863)
+texture_normal = SubResource("AtlasTexture_hxfa5")
+texture_hover = SubResource("AtlasTexture_ibc1s")
+
+[node name="RetryButton" type="TextureButton" parent="."]
+offset_left = 587.0
+offset_top = 465.0
+offset_right = 650.0
+offset_bottom = 505.0
+scale = Vector2(3.738099, 4.114459)
+texture_normal = SubResource("AtlasTexture_bwuko")
+texture_hover = SubResource("AtlasTexture_ht47e")

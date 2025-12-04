@@ -1,0 +1,52 @@
+[gd_scene load_steps=10 format=3 uid="uid://brjegor0wei84"]
+
+[ext_resource type="Texture2D" uid="uid://03qxkn2ppavp" path="res://Assets/Sprites/MainMenu/BackgroundCake.png" id="1_1n3kd"]
+[ext_resource type="Texture2D" uid="uid://d3b56chybvky0" path="res://Assets/Sprites/WinOrLose/CircleYellow.png" id="2_v7ocu"]
+[ext_resource type="Texture2D" uid="uid://dtx7aa8wwd3uy" path="res://Assets/Sprites/WinOrLose/CakeHappy.png" id="3_4ee08"]
+[ext_resource type="Texture2D" uid="uid://dfqvitykwg074" path="res://Assets/Sprites/WinOrLose/WinOrLose.png" id="4_gkach"]
+[ext_resource type="Texture2D" uid="uid://cyoxvyd48h3t0" path="res://Assets/Sprites/WinOrLose/ButtonHeart.png" id="5_e7n7v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6sr1p"]
+atlas = ExtResource("3_4ee08")
+region = Rect2(0.52667236, 4.034895, 79.368034, 74.44373)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12p0n"]
+atlas = ExtResource("4_gkach")
+region = Rect2(28.00002, 7.000046, 643.00024, 120.000046)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqjya"]
+atlas = ExtResource("5_e7n7v")
+region = Rect2(336.69135, 93.899956, 62.91458, 32.24868)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qyj27"]
+atlas = ExtResource("5_e7n7v")
+region = Rect2(402.79364, 93.92796, 63.112457, 32.248672)
+
+[node name="WinScene" type="Node2D"]
+
+[node name="BackgroundCake" type="Sprite2D" parent="."]
+modulate = Color(0.83889705, 0.83889705, 0.838897, 1)
+position = Vector2(577, 323)
+texture = ExtResource("1_1n3kd")
+
+[node name="CircleYellow" type="Sprite2D" parent="."]
+position = Vector2(596, 351)
+texture = ExtResource("2_v7ocu")
+
+[node name="CakeHappy" type="Sprite2D" parent="."]
+position = Vector2(570.99994, 291.99994)
+scale = Vector2(4.689873, 4.8378377)
+texture = SubResource("AtlasTexture_6sr1p")
+
+[node name="YouWin!" type="Sprite2D" parent="."]
+position = Vector2(588, 137)
+texture = SubResource("AtlasTexture_12p0n")
+
+[node name="HeartButton" type="TextureButton" parent="."]
+offset_left = 455.0
+offset_top = 477.99997
+offset_right = 517.0
+offset_bottom = 509.99997
+scale = Vector2(3.67552, 3.8199744)
+texture_normal = SubResource("AtlasTexture_qqjya")
+texture_hover = SubResource("AtlasTexture_qyj27")
