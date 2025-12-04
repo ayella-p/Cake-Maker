@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://jwkad3ywh1n1"]
+
+[ext_resource type="Texture2D" uid="uid://bvmnwk20sjrnq" path="res://Assets/Sprites/Orders/Order3.png" id="1_mrm3f"]
+
+[node name="Order3" type="CanvasLayer"]
+
+[node name="SmallOrder3" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.24400382, 0.24220808)
+texture_normal = ExtResource("1_mrm3f")
+
+[node name="BigOrder3" type="TextureButton" parent="."]
+offset_left = 285.0
+offset_top = -26.000008
+offset_right = 1085.0
+offset_bottom = 774.0
+scale = Vector2(0.7467024, 0.8103836)
+texture_normal = ExtResource("1_mrm3f")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://djy7wqlb1qlbb" path="res://GameScenes/MainGame/main_game.gd" id="1_m7vas"]
 [ext_resource type="Texture2D" uid="uid://b88cyc3tay4hg" path="res://Assets/Sprites/MainGame/GameBackground.png" id="2_xpngq"]
-[ext_resource type="PackedScene" uid="uid://cfr74c251srni" path="res://GameScenes/MainGame/order.tscn" id="3_ban2i"]
+[ext_resource type="PackedScene" uid="uid://cfr74c251srni" path="res://GameScenes/MainGame/Orders/order.tscn" id="3_ban2i"]
 [ext_resource type="Texture2D" uid="uid://3groew7n7mhl" path="res://Assets/Sprites/MainGame/LeftPanel.png" id="6_aaayk"]
 [ext_resource type="Texture2D" uid="uid://8bv8df3w0njs" path="res://Assets/Sprites/MainGame/CakeBase-Flavor/CakeBases.png" id="6_shrk5"]
 [ext_resource type="Texture2D" uid="uid://bxg50o7tjucj3" path="res://Assets/Sprites/Texts/WhoRu.png" id="7_aaayk"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://bnb5efk6kehov" path="res://Assets/Sprites/MainGame/Toppings/CakeToppingSprinkles.png" id="22_da5ad"]
 [ext_resource type="Texture2D" uid="uid://ex6k3soox0ub" path="res://Assets/Sprites/MainGame/Toppings/CakeToppingsChocoDrizzle.png" id="23_6nej8"]
 [ext_resource type="Texture2D" uid="uid://bpgm5e1rdtw46" path="res://Assets/Sprites/MainGame/Toppings/CakeToppingsCherry.png" id="24_ijeb3"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tbacp"]
 atlas = ExtResource("6_aaayk")
