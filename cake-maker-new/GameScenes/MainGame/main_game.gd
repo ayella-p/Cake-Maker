@@ -169,8 +169,12 @@ func _on_next_pressed():
 		
 	elif phase == 3:
 		print("Finished Stack: ", Global.cake_stack)
-		get_tree().change_scene_to_file("res://GameScenes/FinalScene/FinalScene.tscn")
-
+		
+		if(Global.check_win()):
+			get_tree().change_scene_to_file("res://GameScenes/WindOrLoseScenes/win_scene.tscn")
+		else:
+			
+			get_tree().change_scene_to_file("res://GameScenes/WindOrLoseScenes/LoseScene.tscn")
 func _hide_all_children(node):
 	for child in node.get_children():
 		child.visible = false

@@ -31,22 +31,22 @@ var level_data = {
 	1: {
 		"customer": "Reah",
 		# array we want to build
-		"target_stack": ["circle_base", "Choco", "Vanilla", "Candle"],
+		"target_stack": ["heart_base", "Strawberry", "Vanilla", "Cherry"]
+,
 		"order_form_img": preload("res://Assets/Sprites/OrderForm/first_order.jpg") 
 	},
 	2: {
 		"customer": "John",
-		"target_stack": ["square_base", "Vanilla", "Chocolate", "Cherry"],
+		"target_stack": ["circle_base", "Choco", "Strawberry", "Sprinkles"],
 		"order_form_img": preload("res://Assets/Sprites/OrderForm/first_order.jpg")
 	},
 	3: {
 		"customer": "Sarah",
-		"target_stack": ["heart_base", "Strawberry", "Strawberry", "Sprinkles"], 
+		"target_stack": ["square_base", "Vanilla", "Ube", "Drizzle"], 
 		"order_form_img": preload("res://Assets/Sprites/OrderForm/first_order.jpg")
 	}
 }
 func start_level(level_num):
-	current_level = level_num
 	cake_stack = [] 
 	
 	if level_num < 4:

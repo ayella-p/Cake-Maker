@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://brjegor0wei84"]
+[gd_scene load_steps=11 format=3 uid="uid://brjegor0wei84"]
 
 [ext_resource type="Texture2D" uid="uid://03qxkn2ppavp" path="res://Assets/Sprites/MainMenu/BackgroundCake.png" id="1_1n3kd"]
+[ext_resource type="Script" uid="uid://c1sgm0pjiuve" path="res://GameScenes/WindOrLoseScenes/win_scene.gd" id="1_v7ocu"]
 [ext_resource type="Texture2D" uid="uid://d3b56chybvky0" path="res://Assets/Sprites/WinOrLose/CircleYellow.png" id="2_v7ocu"]
 [ext_resource type="Texture2D" uid="uid://dtx7aa8wwd3uy" path="res://Assets/Sprites/WinOrLose/CakeHappy.png" id="3_4ee08"]
 [ext_resource type="Texture2D" uid="uid://dfqvitykwg074" path="res://Assets/Sprites/WinOrLose/WinOrLose.png" id="4_gkach"]
@@ -23,6 +24,7 @@ atlas = ExtResource("5_e7n7v")
 region = Rect2(402.79364, 93.92796, 63.112457, 32.248672)
 
 [node name="WinScene" type="Node2D"]
+script = ExtResource("1_v7ocu")
 
 [node name="BackgroundCake" type="Sprite2D" parent="."]
 modulate = Color(0.83889705, 0.83889705, 0.838897, 1)
